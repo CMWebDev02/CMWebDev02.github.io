@@ -8,10 +8,16 @@
 html {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
+    scrollbar-color: var(--secondary-text-color) var(--main-background-color);
 }
 
 header, footer {
     height: 2vh;
+}
+
+#hero-area-photo {
+    width: 250px;
 }
 
 .navigation-colors {
@@ -32,6 +38,18 @@ header, footer {
     fill:#2A3D45;
 }
 
+.quick-link-footer {
+    text-decoration: solid;
+    color: var(--main-text-color);
+}
+
+.quick-link-footer:hover {
+    text-decoration: solid;
+    color: var(--secondary-text-color);
+    transform: translate3d(-.125rem, 0, 0);
+    font-weight: bold;
+}
+
 .quick-link-option {
     text-decoration: solid;
     color: var(--main-text-color);
@@ -40,6 +58,18 @@ header, footer {
 .quick-link-option:hover {
     text-decoration: solid;
     color: var(--secondary-text-color);
-    transform: translate3d(0, -.125rem, 0);
+    transform: translate3d(-.125rem, 0, 0);
     font-weight: bold;
+}
+
+.horizontal-break {
+    color:#2A3D45;
+}
+
+.quick-link-group:hover {
+    transform: translate3d(0, -.125rem, 0);
+}
+
+.photos-area-image {
+    width: 150px
 }
