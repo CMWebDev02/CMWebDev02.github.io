@@ -18,3 +18,28 @@ header, footer {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
 }
+
+.social-icon-link:hover {
+    transform: translate3d(0, -.125rem, 0);
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.social-icon:hover {
+    fill:#2A3D45;
+}
+
+.quick-link-option {
+    text-decoration: solid;
+    color: var(--main-text-color);
+}
+
+.quick-link-option:hover {
+    text-decoration: solid;
+    color: var(--secondary-text-color);
+    transform: translate3d(0, -.125rem, 0);
+    font-weight: bold;
+}
