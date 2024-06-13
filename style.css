@@ -35,28 +35,28 @@ header, footer {
 }
 
 .social-icon:hover {
-    fill:#2A3D45;
+    fill: var(--main-text-color);
 }
 
 .quick-link-footer {
-    text-decoration: solid;
+    text-decoration: none;
     color: var(--main-text-color);
 }
 
 .quick-link-footer:hover {
-    text-decoration: solid;
+    text-decoration: none;
     color: var(--secondary-text-color);
-    transform: translate3d(-.125rem, 0, 0);
+    transform: translate3d(0, -.125rem, 0);
     font-weight: bold;
 }
 
 .quick-link-option {
-    text-decoration: solid;
+    text-decoration: none;
     color: var(--main-text-color);
 }
 
 .quick-link-option:hover {
-    text-decoration: solid;
+    text-decoration: none;
     color: var(--secondary-text-color);
     transform: translate3d(-.125rem, 0, 0);
     font-weight: bold;
@@ -72,4 +72,14 @@ header, footer {
 
 .photos-area-image {
     width: 150px
+}
+
+#bvt-icon {
+    height: 75px;
+    width: 75px;
+}
+
+.link {
+    text-decoration: none;
+    color: #2A3D45;
 }

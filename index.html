@@ -21,6 +21,17 @@
         <title>Cristiano Miranda's Portfolio Page</title>
     </head>
 
+    <!-- Things To Do:
+        Implement bootstrap breakpoints
+        Add Portfolio page
+        Add About Page
+        Add Contact Page
+        Create a website logo
+        Implement order and breakpoints for elements within main containers
+        Create a graphic 
+        Finish Ui Design
+    -->
+
     <body>
         <header>
             <nav
@@ -62,120 +73,144 @@
         </header>
         
         <main>
-            <div id="main-container" class="mt-5 mb-5">
-                <!-- Initial Hero Page/Area -->
-                <div id="hero-area" class="container-fluid">
-                    <!-- Introduction Heading -->
-                    <div class="row">
-                        <h1>Hello, I am Cristiano Miranda.</h1>
-                        <h3>And I am a Junior Web Developer.</h3>
-                    </div>
-
-                    <!-- Web Page Description -->
-                     <div class="row container-fluid">
+            <div id="main-container" class="mt-5 mb-5 container-fluid">
+                <div class="row">
+                    <!-- Initial Hero Page/Area -->
+                    <div id="hero-area" class="col-12 col-lg-6 col-xl-12 container-fluid">
+                        <!-- Introduction Heading -->
                         <div class="row">
-                            <p>Welcome, this is my portfolio webpage. Here you will find various links and updates for the various projects I am working on, along with some projects I have already finished. </p>
+                            <h1>Hello, I am Cristiano Miranda.</h1>
+                            <h3>And I am a Junior Web Developer.</h3>
                         </div>
 
-                        <!-- Call to Action -->
-                        <div class="row">
-                            <p><a href="#">View More Projects</a></p>
-                        </div>
-                     </div>
+                        <!-- Web Page Description -->
+                        <div class="row container-fluid">
+                            <div class="row">
+                                <p>Welcome, this is my portfolio webpage. Here you will find various links and updates for the various projects I am working on, along with some projects I have already finished. </p>
+                            </div>
 
-                     <!-- Personal Photo Container -->
-                     <div class="row">
-                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="hero-area-photo">
-                        <h6>Temp Photo</h6>
-                     </div>
-                </div>
-            
-            
-                <div id="channel-log-container">
-                    <div class="container-fluid">
+                            <!-- Call to Action -->
+                            <div class="row">
+                                <p><a href="#">View More Projects</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Personal Photo Container -->
                         <div class="row">
-                            <div class="col-6">
-                                <h3>Channel Log</h3>
-                                <p>changes</p>
-                            </div>
-                            <div class="col-6">
-                                <h3>Latest Updates</h3>
-                                <p>updates</p>
-                            </div>
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="hero-area-photo">
+                            <h6>Temp Photo</h6>
                         </div>
                     </div>
-                </div>
-
-                <!-- Photos Area -->
-                <div id="photos-container">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="card col-4">
-                                <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
+                
+                
+                    <div id="channel-log-container" class="col-12 col-lg-6 col-xl-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3>Channel Log</h3>
+                                    <p>changes</p>
                                 </div>
-                            </div>
-                            
-                            <div class="card col-4">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
-                                </div>
-                                <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
-                            </div>
-
-                            <div class="card col-4">
-                                <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
+                                <div class="col-6">
+                                    <h3>Latest Updates</h3>
+                                    <p>updates</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="card col-4">
-                                <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
-                                </div>
-                            </div>
-                            
-                            <div class="card col-4">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
-                                </div>
-                                <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
-                            </div>
+                    </div>
 
-                            <div class="card col-4">
-                                <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Text</p>
+                    <!-- Photos Area -->
+                    <div id="photos-container" class="col-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="card col-4">
+                                    <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
                                 </div>
+                                
+                                <div class="card col-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
+                                    <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
+                                </div>
+
+                                <div class="card col-4">
+                                    <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="card col-4">
+                                    <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card col-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
+                                    <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
+                                </div>
+
+                                <div class="card col-4">
+                                    <img class="card-img-top photos-area-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Title" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learn More Section -->
+                    <div id="learn-more-container" class="col-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h4>But Wait There's More...</h4>
+                                <p>Visit my about page to learn more about my coding journey and more.</p>
+                                <h4><a href="#" class="quick-link-option">About</a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Footer Section -->
+            <!-- This is outside of the main container -->
             <div class="navigation-colors" id="main-footer">
                 <div class="container-fluid">
                     <div class="row  me-1">
-                        <div id="quick-links" class="col-2 m-0 p-1 d-flex flex-column align-items-center">
+                        <div id="quick-links" class="col-4 m-0 p-1 d-flex flex-column align-items-center">
                             <h5>Quick Links</h5>
                             <a href="./index.html" class="fs-6 quick-link-footer">Home</a>
                             <a href="#" class="fs-6 quick-link-footer">Portfolio</a>
                             <a href="#" class="fs-6 quick-link-footer">Contact</a>
                             <a href="#" class="fs-6 quick-link-footer">About</a>
                         </div>
+                        
+                        <div id="bvt-link" class="col-4 d-flex justify-content-center align-items-center">
+                            <a class="quick-link-footer text-center me-2" href="https://www.bayvalleytech.com/">
+                                <div class="d-flex align-items-center">
+                                    <img id="bvt-icon" src="./assets/bay_valley_tech_logo-removebg-preview.png">
+                                    <strong>Bay Valley Tech</strong>
+                                </div>
+                            </a>
+                        </div>
 
-                        <div id="social-links" class="col-10 d-flex align-items-center justify-content-end">
-                            <a class="social-icon-link" href="www.linkedin.com/in/cristiano-miranda-8b30b829a">
+                        <div id="social-links" class="col-4 d-flex align-items-center justify-content-end">
+                            <a class="social-icon-link" href="#">
                                 <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
                             </a>
                             <a class="social-icon-link" href="https://github.com/CMBVT2023">
