@@ -85,3 +85,11 @@ header, footer {
     text-decoration: none;
     color: #2A3D45;
 }
+
+@media screen and (max-height: 500px) {
+    #main-header {
+        max-height: 100px;
+        overflow-y: scroll;
+        scrollbar-color: var(--main-text-color) var(--main-background-color);
+    }
+}

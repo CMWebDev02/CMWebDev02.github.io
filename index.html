@@ -17,18 +17,14 @@
     />
 
     <!-- Custom CSS StyleSheet -->
-    <link rel="stylesheet" href="./style.css" />
-    <title>Cristiano Miranda's Portfolio Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CMWebDev: Home Page</title>
   </head>
 
   <!-- Things To Do:
-        Add credentials to various page links
-        Add Portfolio page
-        Add Credentials page
-        Add About Page
-        Add Contact Page
+        Add Carousel that activates only on tablet and mobile view
         Create a website logo
-        Create a graphic 
+        Create a graphic
         Finish Ui Design
 
         Add content to the pages
@@ -45,8 +41,8 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
+            data-bs-target="#main-header"
+            aria-controls="main-header"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -54,7 +50,7 @@
           </button>
           <div
             class="collapse navbar-collapse mt-1 me-1 text-end"
-            id="collapsibleNavId"
+            id="main-header"
           >
             <div class="quick-link-group">
               <a
@@ -68,7 +64,7 @@
             <div class="quick-link-group">
               <a
                 class="nav-link navigation-colors mt-1 fs-4 quick-link-option"
-                href="#"
+                href="./html/portfolio.html"
                 >Portfolio</a
               >
               <hr class="horizontal-break" />
@@ -76,15 +72,32 @@
             <div class="quick-link-group">
               <a
                 class="nav-link navigation-colors mt-1 fs-4 quick-link-option"
-                href="#"
-                >Contact</a
+                href="./html/credentials.html"
+                >Credentials</a
               >
               <hr class="horizontal-break" />
             </div>
             <div class="quick-link-group">
               <a
                 class="nav-link navigation-colors mt-1 fs-4 quick-link-option"
-                href="#"
+                href="./html/contact.html"
+                >Updates / Log</a
+              >
+              <hr class="horizontal-break" />
+            </div>
+            <div class="quick-link-group">
+              <a
+                class="nav-link navigation-colors mt-1 fs-4 quick-link-option"
+                href="./html/contact.html"
+                >Contact</a
+              >
+              <hr class="horizontal-break" />
+            </div>
+            
+            <div class="quick-link-group">
+              <a
+                class="nav-link navigation-colors mt-1 fs-4 quick-link-option"
+                href="./html/about.html"
                 >About</a
               >
             </div>
@@ -270,9 +283,11 @@
             >
               <h5>Quick Links</h5>
               <a href="./index.html" class="fs-6 quick-link-footer">Home</a>
-              <a href="#" class="fs-6 quick-link-footer">Portfolio</a>
-              <a href="#" class="fs-6 quick-link-footer">Contact</a>
-              <a href="#" class="fs-6 quick-link-footer">About</a>
+              <a href="./html/portfolio.html" class="fs-6 quick-link-footer">Portfolio</a>
+              <a href="./html/credentials.html" class="fs-6 quick-link-footer">Credentials</a>
+              <a href="./html/updates.html" class="fs-6 quick-link-footer">Updates / Log</a>
+              <a href="./html/contact.html" class="fs-6 quick-link-footer">Contact</a>
+              <a href="./html/about.html" class="fs-6 quick-link-footer">About</a>
             </div>
 
             <div
