@@ -18,6 +18,10 @@ header {
     height: 2vh;
 }
 
+#website-logo {
+    width: 150px
+}
+
 .navigation-colors {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
