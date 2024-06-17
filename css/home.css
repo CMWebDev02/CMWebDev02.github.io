@@ -1,5 +1,13 @@
 #hero-area-photo {
     max-width: 250px;
+    height: auto;
+}
+
+.hero-area-text {
+    background-color: color-mix(in srgb, var(--secondary-background-color) 30%, var(--secondary-text-color) 30%);
+    max-width: fit-content;
+    border-radius: 10px;
+    text-shadow: 3px 3px 1px var(--secondary-text-color);
 }
 
 .photos-area-image {
@@ -10,7 +18,8 @@
 .view-more-button {
     /* background-color: var(--main-background-color); */
     background-color: #e77979;
-    padding: 7px;
+    max-width: fit-content;
+    padding: 8px;
     border-radius: 5px;
     text-decoration: none;
     color: var(--secondary-text-color);
@@ -30,6 +39,14 @@
 #photo-cards {
     max-height: 300px;
     overflow-y: scroll;
+} 
+
+@media screen and (min-width: 700px){
+    .hero-area-text {
+        background-color: transparent;
+        max-width: auto;
+        border-radius: 0px;
+    }
 }
 
 @media screen and (max-height: 600px) {

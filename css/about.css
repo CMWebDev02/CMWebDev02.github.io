@@ -1,0 +1,20 @@
+#display-photo {
+    max-width: 250px;
+    height: auto;
+}
+
+.display-text {
+    background-color: color-mix(in srgb, var(--secondary-background-color) 30%, var(--secondary-text-color) 30%);
+    max-width: fit-content;
+    padding: 7px;
+    border-radius: 10px;
+    text-shadow: 3px 3px 1px var(--secondary-text-color);
+}
+
+@media screen and (min-width: 700px){
+    .display-text {
+        background-color: transparent;
+        max-width: auto;
+        border-radius: 0px;
+    }
+}

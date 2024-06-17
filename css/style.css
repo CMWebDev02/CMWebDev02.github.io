@@ -27,6 +27,13 @@ header {
     color: var(--main-text-color);
 }
 
+.main-container-design {
+    background-color: var(--main-background-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px var(--secondary-background-color);
+    color: var(--main-text-color);
+}
+
 .social-icon-link:hover {
     transform: translate3d(0, -.125rem, 0);
 }
