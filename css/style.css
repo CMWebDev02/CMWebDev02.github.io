@@ -1,7 +1,5 @@
 :root {
     --main-background-color: #778DA9;
-    /* Potential Color Change */
-    /* --main-background-color: #00A6A6; */
     --secondary-background-color: #8B687F;
     --main-text-color: #FDFFFC;
     --secondary-text-color: #2A3D45;
@@ -19,7 +17,14 @@ header {
 }
 
 #website-logo {
-    width: 150px
+    height: 60px;
+}
+
+#website-logo:hover {
+    cursor: pointer;
+    transform: translate3d(0, -.125rem, 0);
+    transform: scale(1.05);
+    
 }
 
 .navigation-colors {
@@ -88,6 +93,23 @@ header {
 .link {
     text-decoration: none;
     color: #2A3D45;
+}
+
+.view-more-button {
+    /* background-color: var(--main-background-color); */
+    background-color: #e77979;
+    max-width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.view-more-button:hover {   
+    font-weight: bold;
+    color: var(--main-text-color);
+    background-color: #b46262;
+    box-shadow: 0px 0px 4px 2px #b46262;
 }
 
 @media screen and (max-height: 500px) {

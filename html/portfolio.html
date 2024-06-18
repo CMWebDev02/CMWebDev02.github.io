@@ -37,7 +37,7 @@
             <nav class="navbar fixed-top navigation-colors">
                 <div class="container-fluid navigation-colors">
                   <a href="../index.html" class="navbar-brand navigation-colors fs-3">
-                    CMWebDev
+                    <img id="website-logo" src="../assets/CMWebDev.svg" alt="CMWebDev">
                   </a>
                   <button
                     class="navbar-toggler"
@@ -110,11 +110,11 @@
 
 
         <main>
-        <div id="page-container" class="d-flex flex-column justify-content-between vh-100">
+        <div id="page-container" class="d-flex flex-column justify-content-between vh-100 mt-3">
             <div id="main-container" class="container-fluid mt-5 px-5">
                     <!-- Container for the intro, description, and call to action -->
                     <div class="row">
-                        <div class="col-12 row container-fluid mt-3 p-1 main-container-design">
+                        <div class="col-12 row container-fluid mt-3 p-3 main-container-design">
                             <!-- Introduction Heading -->
                             <div class="row lh-1 align-content-around">
                             <p class="fs-2 fw-bold">
@@ -130,20 +130,123 @@
                             >
                             <div class="row">
                                 <p>
-                                  This page houses all the projects that I have completed and am currently working on.
+                                  Below are all of my major projects that I have made through out my coding career.
                                 </p>
                             </div>
                             </div>
                         </div>
             </div>
 
-            <!-- Certifications Container -->
-            <div id="credentials-container" class="container-fluid">
-              <div class="row">
-                  <div>
+            <!-- Portfolio Container -->
+            <div id="portfolio-container" class="mt-3 mb-3">
+              <div class="accordion" id="project-container">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="javascript-projects">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#javascript"
+                      aria-expanded="true"
+                      aria-controls="javascript"
+                    >
+                     Vanilla JavaScript Projects
+                    </button>
+                  </h2>
+                  <div
+                    id="javascript"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="javascript-projects"
+                    data-bs-parent="#project-container"
+                  >
+                    <div class="accordion-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="card container-fluid main-container-design">
+                            <div class="card-body row">
+                              <div class="col-6 text-center">
+                                <h4 class="card-title">Cookie Crumb Javascript Game</h4>
+                                <p class="card-text text-start">This is a cookie clicker style game I created using javascript.</p>
+                              </div>
+                              <div class="col-6 text-end">
+                              <a class="" href="https://cookie-crumb-clicker.netlify.app/"><img class="project-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600"></a>
+                              </div>
+                            </div>
+                          </div>
 
+                          <div class="card container-fluid main-container-design mt-2">
+                            <div class="card-body row">
+                              <div class="col-6 text-center">
+                                <h4 class="card-title">Cookie Crumb Javascript Game</h4>
+                                <p class="card-text text-start">This is a cookie clicker style game I created using javascript.</p>
+                              </div>
+                              <div class="col-6 text-end">
+                              <a class="" href="https://cookie-crumb-clicker.netlify.app/"><img class="project-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600"></a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+
+                <!-- HTML - CSS Projects -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="html-css-projects">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#html-css"
+                      aria-expanded="false"
+                      aria-controls="html-css"
+                    >
+                     HTML - CSS Projects
+                    </button>
+                  </h2>
+                  <div
+                    id="html-css"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="html-css-projects"
+                    data-bs-parent="#project-container"
+                  >
+                    <div class="accordion-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="card container-fluid main-container-design">
+                            <div class="card-body row">
+                              <div class="col-6 text-center">
+                                <h4 class="card-title">Cookie Crumb Javascript Game</h4>
+                                <p class="card-text text-start">This is a cookie clicker style game I created using javascript.</p>
+                              </div>
+                              <div class="col-6 text-end">
+                              <a class="" href="https://cookie-crumb-clicker.netlify.app/"><img class="project-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600"></a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card container-fluid main-container-design mt-2">
+                            <div class="card-body row">
+                              <div class="col-6 text-center">
+                                <h4 class="card-title">Cookie Crumb Javascript Game</h4>
+                                <p class="card-text text-start">This is a cookie clicker style game I created using javascript.</p>
+                              </div>
+                              <div class="col-6 text-end">
+                              <a class="" href="https://cookie-crumb-clicker.netlify.app/"><img class="project-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600"></a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
+              
             </div>
             </div>
 
@@ -187,7 +290,7 @@
               id="social-links"
               class="col-4 d-flex align-items-center justify-content-end"
             >
-              <a class="social-icon-link" href="#">
+              <a class="social-icon-link" href="https://www.linkedin.com/in/cristiano-miranda-8b30b829a/">
                 <svg
                   class="social-icon"
                   xmlns="http://www.w3.org/2000/svg"
