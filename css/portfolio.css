@@ -1,7 +1,26 @@
+.outer-container-design {
+    color: var(--main-text-color);
+}
+
+.main-colors {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+.inner-container-design {
+    background-color: var(--secondary-background-color);
+    color: var(--main-text-color);
+    box-shadow: 0px 0px 4px 2px var(--secondary-text-color);
+}
+
 .project-image {
     height: auto;
     object-fit: contain;
     max-width: 300px;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
 }
 
 .project-icon-link {
@@ -12,7 +31,7 @@
 
 .project-link {
     text-decoration: none;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
 }
 
 .project-link:hover {
