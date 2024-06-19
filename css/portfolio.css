@@ -1,10 +1,20 @@
 .outer-container-design {
     color: var(--main-text-color);
+    background-color: var(--main-background-color);
 }
 
-.main-colors {
-    background-color: var(--main-background-color);
+.main-button-colors {
+    background-color: var(--main-background-color) !important;
+    color: var(--main-text-color) !important;
+}
+
+.main-button-colors:focus {
     color: var(--main-text-color);
+    box-shadow: none;
+}
+
+.main-button-colors:hover {
+    color: var(--secondary-text-color) !important;
 }
 
 .inner-container-design {
