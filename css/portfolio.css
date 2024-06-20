@@ -54,3 +54,13 @@
 .project-link:hover .project-icon-link{
     fill: var(--main-text-color);
 }
+
+.text-link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+.text-link:hover {
+    color: var(--main-text-color);
+}
