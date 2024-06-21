@@ -24,7 +24,6 @@ header {
     cursor: pointer;
     transform: translate3d(0, -.125rem, 0);
     transform: scale(1.05);
-    
 }
 
 .navigation-colors {
