@@ -24,7 +24,12 @@
 #photo-cards {
     max-height: 300px;
     overflow-y: scroll;
-} 
+}
+
+.photo-card-container {
+    background-color: var(--secondary-background-color);
+    color: var(--main-text-color);
+}
 
 @media screen and (min-width: 700px){
     .hero-area-text {
