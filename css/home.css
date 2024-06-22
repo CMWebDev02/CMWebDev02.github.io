@@ -31,6 +31,10 @@
     color: var(--main-text-color);
 }
 
+#project-carousel {
+    height: 320px
+}
+
 @media screen and (min-width: 700px){
     .hero-area-text {
         background-color: transparent;
