@@ -15,5 +15,13 @@
     font-weight: bold;
     color: var(--secondary-text-color);
     text-shadow: 0px 0px 3px var(--main-text-color);
+}
 
+@media screen and (max-width: 410px) {
+    #email-address {
+        user-select: all;
+        color: var(--secondary-text-color);
+        font-size: 12px;
+        text-shadow: 0px 0px 3px var(--main-text-color);
+    }   
 }
