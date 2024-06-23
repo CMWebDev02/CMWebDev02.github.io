@@ -1,0 +1,27 @@
+.text-link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    text-shadow: 1px 1px 2px var(--main-text-color);
+    font-weight: bold;
+}
+
+.text-link:hover {
+    text-shadow: 0px 0px 2px var(--main-text-color);
+    color: var(--secondary-background-color);
+}
+
+#email-address {
+    user-select: all;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    text-shadow: 0px 0px 3px var(--main-text-color);
+}
+
+@media screen and (max-width: 410px) {
+    #email-address {
+        user-select: all;
+        color: var(--secondary-text-color);
+        font-size: 12px;
+        text-shadow: 0px 0px 3px var(--main-text-color);
+    }   
+}

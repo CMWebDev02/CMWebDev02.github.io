@@ -1,0 +1,66 @@
+.outer-container-design {
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+}
+
+.main-button-colors {
+    background-color: var(--main-background-color) !important;
+    color: var(--main-text-color) !important;
+}
+
+.main-button-colors:focus {
+    color: var(--main-text-color);
+    box-shadow: none;
+}
+
+.main-button-colors:hover {
+    color: var(--secondary-text-color) !important;
+}
+
+.inner-container-design {
+    background-color: var(--secondary-background-color);
+    color: var(--main-text-color);
+    box-shadow: 0px 0px 4px 2px var(--secondary-text-color);
+}
+
+.project-image {
+    height: auto;
+    object-fit: contain;
+    max-width: 300px;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+.project-icon-link {
+    height: 20px;
+    width: 20px;
+    fill: var(--secondary-text-color);
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.project-link:hover {
+    color: var(--main-text-color);
+    font-weight: bold;
+    transform: translate3d(0, -2px, 0);
+
+}
+
+.project-link:hover .project-icon-link{
+    fill: var(--main-text-color);
+}
+
+.text-link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+.text-link:hover {
+    color: var(--main-text-color);
+}
