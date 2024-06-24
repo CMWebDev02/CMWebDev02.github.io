@@ -19,7 +19,7 @@
 }
 
 #photo-cards {
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: scroll;
 }
 
@@ -29,7 +29,8 @@
 }
 
 #project-carousel {
-    height: 320px
+    height: 300px;
+    width: 300px;
 }
 
 @media screen and (max-height: 600px) {

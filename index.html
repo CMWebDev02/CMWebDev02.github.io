@@ -29,6 +29,10 @@
     <link rel="image_src" href="https://cmbvt2023.github.io/assets/CMWebDev-Link-Icon.png">
   </head>
 
+<!-- TODO:
+      Fix the container not being in the center of the page.
+-->
+
   <body>
     <header>
       <nav class="navbar fixed-top navigation-colors">
@@ -157,15 +161,17 @@
               </div>
             </div>
           </div>
+
+        </div>
           
+        <div class="row mt-3 align-items-center">
           <!-- Call To Action Container, things relating to having the user explore other pages. -->
-          <div id="calls-to-action-container" class="container-fluid mt-3">
-            <div class="row">
+          <div id="calls-to-action-container" class="col-12 col-md-8">
               <!-- Photos Area -->
-              <div id="photos-container" class="col-12 col-md-8 mb-4 mb-lg-0">
-                <div class="d-block d-xl-none container-fluid ">
-                    <div class="row d-flex justify-content-center main-container-design">
-                        <div id="photo-area-carousel" class="col-12 carousel slide mt-2 mb-2" data-bs-ride="carousel">
+              <div id="photos-container" class="mb-4 mb-lg-0">
+                <!-- Photo Carousel -->
+                    <div class="d-block d-xl-none d-flex justify-content-center main-container-design">
+                        <div id="photo-area-carousel" class="carousel slide mt-2 mb-2" data-bs-ride="carousel">
                           <div class="carousel-indicators">
                             <button type="button" data-bs-target="#photo-area-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Cookie Crumb Clicker"></button>
                             <button type="button" data-bs-target="#photo-area-carousel" data-bs-slide-to="1" aria-label="Bootstrap Email Interface: Second Iteration"></button>
@@ -215,7 +221,7 @@
                                 </div>
                                 <div class="carousel-item lh-1">
                                   <a class="image-link w-100 d-flex justify-content-center mt-1 mb-5" href="https://login-ui-miranda.netlify.app/">
-                                    <svg class="project-image" width="350px" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="User Icon with a Checkmark" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#008CBA" d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM625 177L497 305c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L591 143c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                                    <svg class="project-image" width="300px" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="User Icon with a Checkmark" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#008CBA" d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM625 177L497 305c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L591 143c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
                                   </a>
                                     <div class="carousel-caption fw-bold">
                                         <h3>Login UI Project</h3>
@@ -378,14 +384,15 @@
                   </div>
                   
                   </div>
-                </div>
               </div>
+          </div>
+              
               
 
 
               <!-- Learn More Area -->
-              <div id="learn-more-container" class="col-12 col-md-4 main-container-design">
-                <div class="container-fluid h-100">
+              <div id="learn-more-container" class="col-12 col-md-4 h-100">
+                <div class="container-fluid h-100 main-container-design">
                   <div class="row h-100 d-flex flex-column justify-content-around text-center p-2">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                       <h4>But Wait There's More...</h4>
@@ -407,8 +414,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+
 
       <!-- Footer Section -->
       <!-- This is outside of the main container -->
