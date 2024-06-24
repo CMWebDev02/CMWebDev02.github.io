@@ -63,3 +63,9 @@
 .text-link:hover {
     color: var(--main-text-color);
 }
+
+.project-description {
+    max-height: 250px;
+    overflow-y: auto;
+    scrollbar-color: var(--secondary-text-color) var(--secondary-background-color);
+}
