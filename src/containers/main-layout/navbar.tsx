@@ -9,12 +9,13 @@ import { faIdCard } from "@fortawesome/free-solid-svg-icons/faIdCard";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "@/components/client/nav-link";
 
 export function NavBar() {
 
   return (
     <header
-      className={`h-screen w-24 group transform duration-300 hover:w-30`}
+      className={`h-screen w-24 group transition-[width] duration-400 ease-in-out hover:w-30`}
     >
       <nav
         className={`bg-blue-200 flex flex-col align-middle items-center p-1 h-full w-full`}
@@ -29,22 +30,31 @@ export function NavBar() {
         />
 
         <div className={`h-1/4 flex flex-col justify-around`}>
-          <Link href={"./"} className="flex gap-2 items-center">
-            <FontAwesomeIcon icon={faHouse} /> Home
-          </Link>
-          <Link href={"./about"}>
-            <FontAwesomeIcon icon={faUser} /> About
-          </Link>
-          <Link href={"./portfolio"}>
-            <FontAwesomeIcon icon={faFolderTree} /> Portfolio
-          </Link>
-          <Link href={"./credentials"}>
-            <FontAwesomeIcon icon={faIdCard} /> Credentials
-          </Link>
-          <Link href={"./contact"} className="flex gap-2 items-center">
-            <FontAwesomeIcon icon={faAddressBook} />
-            <p className="hidden group-hover:block">Contact</p>
-          </Link>
+          <NavLink 
+            href="./"
+            linkName="Home"
+            icon={faHouse}
+          />
+          <NavLink 
+            href="./about"
+            linkName="About"
+            icon={faUser}
+          />
+          <NavLink 
+            href="./portfolio"
+            linkName="Portfolio"
+            icon={faFolderTree}
+          />
+          <NavLink 
+            href="./credentials"
+            linkName="Credentials"
+            icon={faIdCard}
+          />
+          <NavLink 
+            href="./contact"
+            linkName="Contact"
+            icon={faAddressBook}
+          />
         </div>
       </nav>
     </header>
