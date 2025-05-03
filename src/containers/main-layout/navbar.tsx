@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 
 import { faFolderTree } from "@fortawesome/free-solid-svg-icons/faFolderTree";
 import { faIdCard } from "@fortawesome/free-solid-svg-icons/faIdCard";
@@ -15,7 +12,7 @@ export function NavBar() {
 
   return (
     <header
-      className={`h-screen w-24 group transition-[width] duration-400 ease-in-out hover:w-30`}
+      className={`h-screen w-24 group transition-[width] duration-400 ease-in-out hover:w-30 overflow-x-hidden`}
     >
       <nav
         className={`bg-blue-200 flex flex-col align-middle items-center p-1 h-full w-full`}
