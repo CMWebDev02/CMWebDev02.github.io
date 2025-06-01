@@ -5,28 +5,13 @@
 // Footer with contact and excess info about me.
 
 import CardContainer from "@/components/client/card-container";
+import HeroContainer from "@/containers/main-page/hero-container";
 
 export default function Home() {
   return (
-    <>
-      <CardContainer
-        title="Hello, I am Cristiano Miranda"
-        description="and I am a Junior Web Developer."
-        links={[
-          { linkName: "Portfolio", href: { href: "/" } },
-          { linkName: "Credentials", href: { href: "/" } },
-        ]}
-      >
-        <div>
-          <h3>2+</h3>
-          <span>Years of Web Development Experience</span>
-        </div>
-
-        <div>
-          <h3>20+</h3>
-          <span>Web Projects</span>
-        </div>
-      </CardContainer>
+    <>    
+      <HeroContainer />
+      
 
       <CardContainer
         title="Introduction:"
