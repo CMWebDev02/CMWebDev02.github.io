@@ -10,12 +10,12 @@ import PortfolioContainer from "@/containers/main-page/portfolio-container";
 
 export default function Home() {
   return (
-    <>    
+    <main className="bg-blue-300 w-full flex flex-col justify-around items-center">
       <HeroContainer />
 
       <IntroContainer />
 
       <PortfolioContainer />
-    </>
+    </main>
   );
 }

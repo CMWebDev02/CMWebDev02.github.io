@@ -10,7 +10,7 @@ export default function PortfolioContainer() {
   return (
     <Card className="container w-11/12 sm:w-5/6 lg:w-3/4">
       <CardHeader>
-        <CardTitle>My Portfolio</CardTitle>
+        <CardTitle>Portfolio</CardTitle>
         <CardDescription>
           Some of my personal favorite projects.
         </CardDescription>
