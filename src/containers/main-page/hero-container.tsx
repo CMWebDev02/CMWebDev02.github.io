@@ -1,4 +1,5 @@
 "use client";
+import LinkBadge from "@/components/client/link-badge";
 import {
   Card,
   CardContent,
@@ -24,24 +25,17 @@ export default function HeroContainer() {
         <CardDescription>and I am a Junior Web Developer.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-row">
-        {/* Break into component */}
-        <div className="flex flex-row group cursor-pointer select-none" onClick={redirectCredentials}>
-          <h3 className="text-4xl transition-[color] duration-1000 ease-in-out group-hover:text-blue-600">2+</h3>
-          <span className="text-xs transition-[color] duration-1000 ease-in-out group-hover:text-green-500">
-            Years of Web
-            <br /> Development
-            <br /> Experience
-          </span>
-        </div>
+        <LinkBadge redirectFunction={redirectCredentials} linkText="2+">
+          Years of Web
+          <br /> Development
+          <br /> Experience
+        </LinkBadge>
 
-        <div className="flex flex-row" onClick={redirectPortfolio}>
-          <h3 className="text-4xl">20+</h3>
-          <span className="text-xs">
-            Web
-            <br />
-            Projects
-          </span>
-        </div>
+        <LinkBadge redirectFunction={redirectPortfolio} linkText="20+">
+          Web
+          <br />
+          Projects
+        </LinkBadge>
       </CardContent>
     </Card>
   );
