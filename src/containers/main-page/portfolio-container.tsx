@@ -1,3 +1,4 @@
+import ProjectCard from "@/components/client/project-card";
 import {
   Card,
   CardContent,
@@ -16,9 +17,7 @@ export default function PortfolioContainer() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div>
-          <h2>Project One</h2>
-        </div>
+        <ProjectCard />
         <div>
           <h2>Project Two</h2>
         </div>
