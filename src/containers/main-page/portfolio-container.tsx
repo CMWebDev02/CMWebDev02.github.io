@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
+import MonthlyTemplateGeneratorImage from "../../../public/assets/project-icons/Monthly-Template-Generator.svg";
 
 export default function PortfolioContainer() {
   return (
@@ -17,10 +18,10 @@ export default function PortfolioContainer() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <ProjectCard />
-        <div>
-          <h2>Project Two</h2>
-        </div>
+        <ProjectCard projectTitle="Monthly Template Generator" projectImage={MonthlyTemplateGeneratorImage} imageDescription="A copy of a file being generated." isLeftAligned={true} >
+          Autofill the date onto a pdf file. The user can choose any date range, and include or exclude specific weekdays, to ease the process of creating monthly schedules or reports.
+        </ProjectCard>
+        
       </CardContent>
     </Card>
   );
