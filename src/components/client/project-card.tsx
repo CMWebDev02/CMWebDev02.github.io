@@ -6,18 +6,18 @@ interface ProjectCardProps {
     projectTitle: string;
     projectImage: string;
     imageDescription: string;
-    isLeftAligned: boolean;
+    isImageLeftAligned: boolean;
     children: ReactNode;
 }
 
-export default function ProjectCard({projectTitle, projectImage, imageDescription, isLeftAligned, children}: ProjectCardProps) {
+export default function ProjectCard({projectTitle, projectImage, imageDescription, isImageLeftAligned, children}: ProjectCardProps) {
 
     return (
         <Card>
             <CardHeader>
                 <CardTitle>{projectTitle}</CardTitle>
             </CardHeader>
-            <CardContent className={`${isLeftAligned ? "flex-row" : "flex-row-reverse"}`}>
+            <CardContent className={`flex ${isImageLeftAligned ? "flex-row" : "flex-row-reverse"}`}>
                 <Image src={projectImage} alt={imageDescription} width={400} height={400} />
                 <p>
                     {children}
