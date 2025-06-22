@@ -49,7 +49,7 @@ export default function HeroContainer() {
           </p>
         </div>
 
-        <div className="flex items-center flex-row md:justify-center gap-5">
+        <div className="flex items-center flex-row flex-wrap md:justify-center gap-5">
           <LinkBadge redirectFunction={redirectCredentials} linkText="2+">
             Years of Web
             <br /> Development
@@ -62,7 +62,7 @@ export default function HeroContainer() {
           </LinkBadge>
         </div>
       </CardContent>
-      <CardContent className="w-full flex flex-col md:hidden">
+      <CardFooter className="w-full flex flex-col md:hidden">
         <h2>Allow me to introduce myself...</h2>
         <p>
           I currently pursuing a Bachelor Degree in Computer Science and in my
@@ -72,7 +72,7 @@ export default function HeroContainer() {
           working with NextJs and NodeJs and so that I continue working towards
           a career as a fullstack engineer.
         </p>
-      </CardContent>
+      </CardFooter>
     </Card>
   );
 }
