@@ -15,7 +15,7 @@ export function NavBar() {
       className={`h-screen w-24 group transition-[width] duration-400 ease-in-out hover:w-30 overflow-x-hidden`}
     >
       <nav
-        className={`bg-blue-200 flex flex-col align-middle items-center p-1 h-full w-full`}
+        className={`hidden md:flex bg-blue-200 flex-col align-middle items-center p-1 h-full w-full`}
       >
         <Image
           id="miniature-website-logo"
