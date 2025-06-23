@@ -18,6 +18,7 @@ export default function ProjectCarousel({
   const carouselItems = projectsArray.map((projectObj, index) => {
     return (
       <CarouselItem key={`${projectObj.projectTitle} + ${index}`}>
+        {/* Create a project-carousel-item for this */}
         <ProjectCard
           projectTitle={projectObj.projectTitle}
           projectImage={projectObj.projectImage}
