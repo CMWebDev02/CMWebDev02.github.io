@@ -10,4 +10,6 @@ export type Project = {
     projectImage: string;
     imageDescription: string;
     projectDescription: string;
+    projectDemoLink: string | null;
+    projectGitHubLink: string;
 }
