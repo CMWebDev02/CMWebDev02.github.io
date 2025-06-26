@@ -1,17 +1,16 @@
 import type { Project } from "@/lib/types";
 import ProjectListItem from "./project-list-item";
+import { ScrollArea } from "../ui/scroll-area";
 
 interface ProjectListProps {
   projectsArray: Project[];
 }
 
-export default function ProjectList({
-  projectsArray,
-}: ProjectListProps) {
-    const projectCards = projectsArray.map((projectObj, index) => {
-      return (
+export default function ProjectList({ projectsArray }: ProjectListProps) {
+  const projectCards = projectsArray.map((projectObj, index) => {
+    return (
+      <div key={`${projectObj.projectTitle} + ${index}`} className="p-5">
         <ProjectListItem
-          key={`${projectObj.projectTitle} + ${index}`}
           projectTitle={projectObj.projectTitle}
           projectImage={projectObj.projectImage}
           projectDemoLink={projectObj.projectDemoLink}
@@ -21,12 +20,11 @@ export default function ProjectList({
         >
           {projectObj.projectDescription}
         </ProjectListItem>
-      );
-    });
+      </div>
+    );
+  });
 
-    return (
-        <>
-            {projectCards}
-        </>
-    )
+  return (
+    <ScrollArea className="w-full h-full max-h-full hidden md:flex">{projectCards}</ScrollArea>
+  );
 }

@@ -30,7 +30,7 @@ export default function ProjectCarousel({
   });
 
   return (
-    <Carousel>
+    <Carousel className="flex md:hidden h-full">
       <CarouselContent>{carouselItems}</CarouselContent>
       <CarouselPrevious />
       <CarouselNext />

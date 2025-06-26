@@ -1,7 +1,6 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
@@ -21,19 +20,40 @@ export default function PortfolioContainer() {
       projectDescription:
         "Autofill the date onto a pdf file. The user can choose any date range, and include or exclude specific weekdays, to ease the process of creating monthly schedules or reports.",
       projectDemoLink: "https://monthly-template-generator.netlify.app/",
-      projectGitHubLink: "https://github.com/CMBVT2023/monthly-template-generator"
+      projectGitHubLink:
+        "https://github.com/CMBVT2023/monthly-template-generator",
+    },
+    {
+      projectTitle: "Monthly Template Generator",
+      projectImage: projectIconsImports.monthly_template_generator_icon,
+      imageDescription: "A copy of a file being generated.",
+      projectDescription:
+        "Autofill the date onto a pdf file. The user can choose any date range, and include or exclude specific weekdays, to ease the process of creating monthly schedules or reports.",
+      projectDemoLink: "https://monthly-template-generator.netlify.app/",
+      projectGitHubLink:
+        "https://github.com/CMBVT2023/monthly-template-generator",
+    },
+    {
+      projectTitle: "Monthly Template Generator",
+      projectImage: projectIconsImports.monthly_template_generator_icon,
+      imageDescription: "A copy of a file being generated.",
+      projectDescription:
+        "Autofill the date onto a pdf file. The user can choose any date range, and include or exclude specific weekdays, to ease the process of creating monthly schedules or reports.",
+      projectDemoLink: "https://monthly-template-generator.netlify.app/",
+      projectGitHubLink:
+        "https://github.com/CMBVT2023/monthly-template-generator",
     },
   ];
 
   return (
-    <Card className="container w-11/12 sm:w-5/6 lg:w-3/4">
-      <CardHeader>
-        <CardTitle>Portfolio</CardTitle>
-        <CardDescription>
-          Some of my personal favorite projects.
-        </CardDescription>
+    <Card className="container w-11/12 sm:w-5/6 lg:w-3/4 h-full">
+      <CardHeader className="h-1/12">
+        <CardTitle>
+          <h2>Portfolio</h2>
+          <h3>Some of my personal favorite projects.</h3>
+        </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="h-11/12">
         <ProjectCarousel projectsArray={projectsArray} />
         <ProjectList projectsArray={projectsArray} />
       </CardContent>
