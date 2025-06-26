@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Button } from "../ui/button";
 
 interface LinkBadgeProps {
   redirectFunction: () => void;
@@ -12,8 +13,8 @@ export default function LinkBadge({
   children,
 }: LinkBadgeProps) {
   return (
-    <div
-      className="flex flex-row group cursor-pointer select-none"
+    <Button
+      className="flex flex-row group cursor-pointer select-none h-full"
       onClick={redirectFunction}
     >
       <h3 className="text-4xl transition-[color] duration-200 ease-in-out group-hover:text-blue-600">
@@ -22,6 +23,6 @@ export default function LinkBadge({
       <span className="text-xs transition-[color] duration-200 ease-in-out group-hover:text-green-500">
         {children}
       </span>
-    </div>
+    </Button>
   );
 }
