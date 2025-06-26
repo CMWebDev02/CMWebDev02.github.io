@@ -12,10 +12,49 @@ export function NavBar() {
 
   return (
     <header
-      className={`h-screen w-24 group transition-[width] duration-400 ease-in-out hover:w-30 overflow-x-hidden`}
+      className={`h-12 md:h-screen w-full md:w-12 group transition-[width] duration-400 ease-in-out hover:w-30 overflow-x-hidden bg-blue-200`}
     >
+      <nav className="flex md:hidden h-full w-full gap-1">
+        <Image
+          id="miniature-website-logo"
+          src="./assets/CMWebDev-Graphic.svg"
+          alt="CMWebDev Website Logo"
+          width={150}
+          height={150}
+          className="h-10 w-10 self-baseline"
+        />
+
+        <div className={`h-full flex flex-row justify-around overflow-x-scroll gap-1`}>
+          <NavLink 
+            href="./"
+            linkName="Home"
+            icon={faHouse}
+          />
+          <NavLink 
+            href="./about"
+            linkName="About"
+            icon={faUser}
+          />
+          <NavLink 
+            href="./portfolio"
+            linkName="Portfolio"
+            icon={faFolderTree}
+          />
+          <NavLink 
+            href="./credentials"
+            linkName="Credentials"
+            icon={faIdCard}
+          />
+          <NavLink 
+            href="./contact"
+            linkName="Contact"
+            icon={faAddressBook}
+          />
+        </div>
+      </nav>
+
       <nav
-        className={`hidden md:flex bg-blue-200 flex-col align-middle items-center p-1 h-full w-full`}
+        className={`hidden md:flex flex-col align-middle items-center p-1 h-full w-full`}
       >
         <Image
           id="miniature-website-logo"
@@ -23,10 +62,10 @@ export function NavBar() {
           alt="CMWebDev Website Logo"
           width={150}
           height={150}
-          className="w-20 self-baseline"
+          className="w-full self-baseline"
         />
 
-        <div className={`h-1/4 flex flex-col justify-around`}>
+        <div className={`h-1/4 flex flex-col justify-around sticky top-40`}>
           <NavLink 
             href="./"
             linkName="Home"
