@@ -25,6 +25,8 @@ export default function ProjectList({ projectsArray }: ProjectListProps) {
   });
 
   return (
-    <ScrollArea className="w-full h-full max-h-full hidden md:flex">{projectCards}</ScrollArea>
+    <ScrollArea className="w-full h-full max-h-full hidden md:flex">
+      {projectCards}
+    </ScrollArea>
   );
 }

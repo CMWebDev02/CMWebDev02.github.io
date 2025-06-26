@@ -9,12 +9,12 @@ import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "@/components/client/nav-link";
 
 export function NavBar() {
-
   return (
     <header
       className={`h-12 md:h-screen w-full md:w-12 group transition-[width] duration-400 ease-in-out hover:w-30 overflow-x-hidden bg-blue-200`}
     >
-      <nav className="flex md:hidden h-full w-full gap-1">
+      {/* Mobile View NavBar */}
+      <nav className="flex md:hidden h-full w-full gap-2">
         <Image
           id="miniature-website-logo"
           src="./assets/CMWebDev-Graphic.svg"
@@ -24,35 +24,25 @@ export function NavBar() {
           className="h-10 w-10 self-baseline"
         />
 
-        <div className={`h-full flex flex-row justify-around overflow-x-scroll gap-1`}>
-          <NavLink 
-            href="./"
-            linkName="Home"
-            icon={faHouse}
-          />
-          <NavLink 
-            href="./about"
-            linkName="About"
-            icon={faUser}
-          />
-          <NavLink 
+        <div
+          className={`h-full flex flex-row justify-around overflow-x-scroll gap-2`}
+        >
+          <NavLink href="./" linkName="Home" icon={faHouse} />
+          <NavLink href="./about" linkName="About" icon={faUser} />
+          <NavLink
             href="./portfolio"
             linkName="Portfolio"
             icon={faFolderTree}
           />
-          <NavLink 
+          <NavLink
             href="./credentials"
             linkName="Credentials"
             icon={faIdCard}
           />
-          <NavLink 
-            href="./contact"
-            linkName="Contact"
-            icon={faAddressBook}
-          />
+          <NavLink href="./contact" linkName="Contact" icon={faAddressBook} />
         </div>
       </nav>
-
+      {/* Desktop View NavBar */}
       <nav
         className={`hidden md:flex flex-col align-middle items-center p-1 h-full w-full`}
       >
@@ -66,31 +56,19 @@ export function NavBar() {
         />
 
         <div className={`h-1/4 flex flex-col justify-around sticky top-40`}>
-          <NavLink 
-            href="./"
-            linkName="Home"
-            icon={faHouse}
-          />
-          <NavLink 
-            href="./about"
-            linkName="About"
-            icon={faUser}
-          />
-          <NavLink 
+          <NavLink href="./" linkName="Home" icon={faHouse} />
+          <NavLink href="./about" linkName="About" icon={faUser} />
+          <NavLink
             href="./portfolio"
             linkName="Portfolio"
             icon={faFolderTree}
           />
-          <NavLink 
+          <NavLink
             href="./credentials"
             linkName="Credentials"
             icon={faIdCard}
           />
-          <NavLink 
-            href="./contact"
-            linkName="Contact"
-            icon={faAddressBook}
-          />
+          <NavLink href="./contact" linkName="Contact" icon={faAddressBook} />
         </div>
       </nav>
     </header>
