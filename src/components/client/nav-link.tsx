@@ -25,7 +25,7 @@ export function NavLink({ href, linkName, icon }: NavLinkProps) {
       </div>
 
       {/* Mobile View Nav Text */}
-      <p className="flex md:hidden">{linkName}</p>
+      <p className="flex md:hidden text-2xl select-none">{linkName}</p>
     </Link>
   );
 }
