@@ -22,14 +22,19 @@ export default function ProjectCarouselItem({
   children,
 }: ProjectCarouselItemProps) {
   return (
-    <CarouselItem>
-      <Card>
-        <CardHeader>{projectTitle}</CardHeader>
-        <CardContent>
-          <Image layout="auto" src={projectImage} alt={imageDescription} />
+    <CarouselItem className="w-full h-full">
+      <Card className="w-full h-full flex flex-col gap-1">
+        <CardHeader className="w-full h-1/12">{projectTitle}</CardHeader>
+        <CardContent className="w-full h-10/12 flex flex-col gap-2">
+          <Image
+            layout="auto"
+            src={projectImage}
+            alt={imageDescription}
+            className="aspect-auto object-contain h-20"
+          />
           {children}
         </CardContent>
-        <CardFooter>
+        <CardFooter className="w-full h-1/12 flex gap-2 justify-center">
           {projectDemoLink !== null && (
             <Link href={{ href: projectDemoLink }}>Demo</Link>
           )}

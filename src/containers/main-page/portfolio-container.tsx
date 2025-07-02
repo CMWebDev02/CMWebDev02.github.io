@@ -18,7 +18,7 @@ export default function PortfolioContainer() {
           <h3>Some of my personal favorite projects.</h3>
         </CardTitle>
       </CardHeader>
-      <CardContent className="h-11/12">
+      <CardContent className="h-11/12 w-full p-3 flex justify-center">
         <ProjectCarousel projectsArray={projectsArray} />
         <ProjectList projectsArray={projectsArray} />
       </CardContent>
