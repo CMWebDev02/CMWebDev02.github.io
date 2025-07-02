@@ -9,7 +9,7 @@ interface ProjectListProps {
 export default function ProjectList({ projectsArray }: ProjectListProps) {
   const projectCards = projectsArray.map((projectObj, index) => {
     return (
-      <div key={`${projectObj.projectTitle} + ${index}`} className="p-5">
+      <div key={`${projectObj.projectTitle} + ${index}`} className="p-1">
         <ProjectListItem
           projectTitle={projectObj.projectTitle}
           projectImage={projectObj.projectImage}
