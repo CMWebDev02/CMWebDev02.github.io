@@ -4,9 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme custom {
-  --color-primary-background: #C3F8F5;
-  --color-secondary-background: #64E9EE;
+  --color-primary-background: #c3f8f5;
+  --color-secondary-background: #64e9ee;
   --color-highlight: var(--highlight);
+  --color-card-text: var(--card-text);
+  --color-card-title: var(--card-title);
 }
 
 @theme inline {
@@ -54,10 +56,12 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
+  --card-text: #1F323B;
+  --card-title: #001011;
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: #37123C;
+  --primary: #37123c;
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
@@ -83,7 +87,7 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
-  --highlight: #7B904B;
+  --highlight: #7b904b;
 }
 
 .dark {

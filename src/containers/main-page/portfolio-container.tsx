@@ -13,9 +13,9 @@ import Link from "next/link";
 
 export default function PortfolioContainer() {
   return (
-    <Card className="container w-full h-min bg-secondary-background">
+    <Card className="container w-full h-mi">
       <CardHeader className="h-1/12">
-        <CardTitle className="">Portfolio Project Highlights</CardTitle>
+        <CardTitle className="text-md md:text-3xl">Portfolio Project Highlights</CardTitle>
       </CardHeader>
       <CardContent className="h-11/12 w-full p-3 flex justify-center">
         <ProjectCarousel projectsArray={projectsArray} />

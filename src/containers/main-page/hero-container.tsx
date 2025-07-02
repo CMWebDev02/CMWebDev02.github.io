@@ -20,7 +20,7 @@ export default function HeroContainer() {
   }
 
   return (
-    <Card className="container w-full p-1 bg-secondary-background">
+    <Card className="container w-full p-1">
       <CardHeader className="w-full h-auto flex flex-col col-span-1">
         <CardTitle className="text-md md:text-3xl">
           <span className="text-2xl md:text-5xl">Hello</span>, I am Cristiano
@@ -53,7 +53,7 @@ export default function HeroContainer() {
               Projects
             </LinkBadge>
           </div>
-          <CardDescription>
+          <CardDescription className="text-card-text">
             <h2 className="text-lg md:text-2xl font-medium md:font-bold">
               Allow me to introduce myself...
             </h2>
