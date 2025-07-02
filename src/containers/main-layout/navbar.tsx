@@ -13,7 +13,6 @@ export function NavBar() {
     <header
       className={`h-12 md:h-screen w-full md:w-12 group md:transition-[width] duration-400 ease-in-out md:hover:w-30 overflow-x-hidden bg-blue-200`}
     >
-      {/* Mobile View NavBar */}
       <nav className="flex md:flex-col align-middle items-center p-1 h-full w-full gap-2">
         <Image
           id="miniature-website-logo"
@@ -42,7 +41,6 @@ export function NavBar() {
           <NavLink href="./contact" linkName="Contact" icon={faAddressBook} />
         </div>
       </nav>
-      {/* Desktop View NavBar */}
     </header>
   );
 }
