@@ -3,12 +3,13 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
 import { ReactNode } from "react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+import ProjectLinks from "./project-links";
 
 interface ProjectListItemProps {
   projectTitle: string;
@@ -52,16 +53,13 @@ export default function ProjectListItem({
             w-1/12
           "
         />
-        <CardDescription className="w-11/12">
+        <CardDescription className="w-10/12">
           <p className="text-lg text-card-text">{children}</p>
-          <div className="text-card-text">
-            {projectDemoLink !== null && (
-              <Link href={{ href: projectDemoLink }}>Demo</Link>
-            )}
-            <Link href={{ href: projectGitHubLink }}>GitHub</Link>
-          </div>
         </CardDescription>
       </CardContent>
+      <CardFooter className="h-1/12 w-full">
+        <ProjectLinks projectDemoLink={projectDemoLink} projectGitHubLink={projectGitHubLink} />
+      </CardFooter>
     </Card>
   );
 }

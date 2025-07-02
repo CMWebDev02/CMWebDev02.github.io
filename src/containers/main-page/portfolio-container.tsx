@@ -13,15 +13,15 @@ import Link from "next/link";
 
 export default function PortfolioContainer() {
   return (
-    <Card className="container w-full h-mi">
+    <Card className="container w-full h-min md:h-full">
       <CardHeader className="h-1/12">
         <CardTitle className="text-md md:text-3xl">Portfolio Project Highlights</CardTitle>
       </CardHeader>
-      <CardContent className="h-11/12 w-full p-3 flex justify-center">
+      <CardContent className="h-10/12 w-full p-3 flex justify-center">
         <ProjectCarousel projectsArray={projectsArray} />
         <ProjectList projectsArray={projectsArray} />
       </CardContent>
-      <CardFooter className="w-full flex justify-center">
+      <CardFooter className="w-full h-1/12 flex justify-center">
         <Link href={"./portfolio"}>
           <Button className="text-2xl">View More</Button>
         </Link>

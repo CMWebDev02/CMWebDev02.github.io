@@ -9,6 +9,7 @@ import {
 } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectLinks from "./project-links";
 
 interface ProjectCarouselItemProps {
   projectTitle: string;
@@ -42,11 +43,8 @@ export default function ProjectCarouselItem({
           />
           {children}
         </CardContent>
-        <CardFooter className="w-full h-1/12 flex gap-2 justify-center">
-          {projectDemoLink !== null && (
-            <Link href={{ href: projectDemoLink }}>Demo</Link>
-          )}
-          <Link href={{ href: projectGitHubLink }}>GitHub</Link>
+        <CardFooter className="w-full h-1/12">
+          <ProjectLinks projectDemoLink={projectDemoLink} projectGitHubLink={projectGitHubLink} />
         </CardFooter>
       </Card>
     </CarouselItem>
