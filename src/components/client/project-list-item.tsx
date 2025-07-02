@@ -23,7 +23,7 @@ export default function ProjectListItem({
   children,
 }: ProjectListItemProps) {
   return (
-    <Card className="h-1/4 w-full">
+    <Card className="h-1/4 w-full bg-primary-background/70">
       <CardHeader className="h-1/12 w-full">
         <CardTitle>{projectTitle}</CardTitle>
       </CardHeader>

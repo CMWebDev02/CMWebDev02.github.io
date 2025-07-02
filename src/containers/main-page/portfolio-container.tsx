@@ -11,7 +11,7 @@ import { projectsArray } from "@/lib/utils";
 export default function PortfolioContainer() {
 
   return (
-    <Card className="container w-full h-min">
+    <Card className="container w-full h-min bg-secondary-background">
       <CardHeader className="h-1/12">
         <CardTitle>
           <h2>Portfolio</h2>

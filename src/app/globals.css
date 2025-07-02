@@ -4,9 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme custom {
-  --color-navbar-background: #B497D6;
-  --color-primary-background: #64E9EE;
-  --color-primary: #093A3E;
+  --color-primary-background: #C3F8F5;
+  --color-secondary-background: #64E9EE;
   --color-highlight: #7B904B;
 }
 
@@ -58,7 +57,7 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: #093A3E;
+  --primary: #37123C;
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);

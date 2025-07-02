@@ -23,7 +23,7 @@ export default function ProjectCarouselItem({
 }: ProjectCarouselItemProps) {
   return (
     <CarouselItem className="w-full h-full">
-      <Card className="w-full h-full flex flex-col gap-1">
+      <Card className="w-full h-full flex flex-col gap-1 bg-secondary-background/80">
         <CardHeader className="w-full h-1/12">{projectTitle}</CardHeader>
         <CardContent className="w-full h-10/12 flex flex-col gap-2">
           <Image
