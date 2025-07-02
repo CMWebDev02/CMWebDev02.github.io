@@ -12,7 +12,7 @@ export function NavLink({ href, linkName, icon }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className="w-full flex gap-1 md:gap-2 items-center select-none"
+      className="w-full flex gap-1 md:gap-2 items-center select-none text-white"
     >
       {/* Desktop View Nav Icon and Text */}
       <div className="hidden md:flex w-auto">
@@ -25,7 +25,7 @@ export function NavLink({ href, linkName, icon }: NavLinkProps) {
       </div>
 
       {/* Mobile View Nav Text */}
-      <p className="flex md:hidden text-2xl select-none">{linkName}</p>
+      <p className="flex md:hidden text-3xl sm:text-4xl select-none">{linkName}</p>
     </Link>
   );
 }
