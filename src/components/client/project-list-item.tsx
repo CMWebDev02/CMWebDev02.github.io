@@ -23,22 +23,31 @@ export default function ProjectListItem({
   children,
 }: ProjectListItemProps) {
   return (
-    <Card>
-      <CardHeader>
+    <Card className="h-1/4 w-full">
+      <CardHeader className="h-1/12 w-full">
         <CardTitle>{projectTitle}</CardTitle>
       </CardHeader>
       <CardContent
-        className={`flex ${
-          isImageLeftAligned ? "flex-row" : "flex-row-reverse"
-        }`}
+        className={` 
+          ${isImageLeftAligned ? "flex-row" : "flex-row-reverse"}
+          flex
+          h-10/12
+          gap-5
+          w-full
+          `}
       >
         <Image
           src={projectImage}
           alt={imageDescription}
           width={400}
           height={400}
+          className="
+            aspect-auto
+            object-contain
+            w-1/12
+          "
         />
-        <CardDescription>
+        <CardDescription className="w-11/12 ">
           <p>{children}</p>
           <div>
             {projectDemoLink !== null && <Link href={{ href: projectDemoLink }}>Demo</Link>}
