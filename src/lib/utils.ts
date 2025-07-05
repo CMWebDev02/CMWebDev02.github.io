@@ -14,6 +14,7 @@ const projectIcons = {
 export const projectsArray: Project[] = [
   {
     projectTitle: "Monthly Template Generator",
+    projectType: "React",
     projectImage: projectIcons.monthly_template_generator_icon,
     imageDescription: "A copy of a file being generated.",
     projectDescription:
@@ -24,6 +25,7 @@ export const projectsArray: Project[] = [
   },
   {
     projectTitle: "Monthly Template Generator",
+    projectType: "React",
     projectImage: projectIcons.monthly_template_generator_icon,
     imageDescription: "A copy of a file being generated.",
     projectDescription:
@@ -34,6 +36,7 @@ export const projectsArray: Project[] = [
   },
   {
     projectTitle: "Monthly Template Generator",
+    projectType: "React",
     projectImage: projectIcons.monthly_template_generator_icon,
     imageDescription: "A copy of a file being generated.",
     projectDescription:

@@ -10,6 +10,19 @@ import ProjectCarousel from "@/components/client/project-carousel";
 import ProjectList from "@/components/client/project-list";
 
 export default function PortfolioPage() {
+  const AccordionItems = [ "React", "JavaScript", "HTML", "CMS"].map((type) => {
+    const filteredProjects = projectsArray.filter(project => project.projectType === type);
+    return (
+      <AccordionItem value={type} key={type}>
+              <AccordionTrigger>{type}</AccordionTrigger>
+              <AccordionContent>
+                <ProjectCarousel projectsArray={filteredProjects} />
+                <ProjectList projectsArray={filteredProjects} />
+              </AccordionContent>
+            </AccordionItem>
+    )
+  });
+
   return (
     <>
       <Card className="w-full lg:w-11/12 xl:w-4/5 h-full md:h-11/12 max-h-full">
@@ -18,34 +31,7 @@ export default function PortfolioPage() {
         </CardHeader>
         <CardContent className="h-full max-h-full overflow-scroll">
           <Accordion type="single" collapsible>
-            <AccordionItem value="React">
-              <AccordionTrigger>React</AccordionTrigger>
-              <AccordionContent>
-                <ProjectCarousel projectsArray={projectsArray} />
-                <ProjectList projectsArray={projectsArray} />
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="JavaScript">
-              <AccordionTrigger>JavaScript</AccordionTrigger>
-              <AccordionContent>
-                <ProjectCarousel projectsArray={projectsArray} />
-                <ProjectList projectsArray={projectsArray} />
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="HTML">
-              <AccordionTrigger>HTML</AccordionTrigger>
-              <AccordionContent>
-                <ProjectCarousel projectsArray={projectsArray} />
-                <ProjectList projectsArray={projectsArray} />
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="CMS">
-              <AccordionTrigger>CMS</AccordionTrigger>
-              <AccordionContent>
-                <ProjectCarousel projectsArray={projectsArray} />
-                <ProjectList projectsArray={projectsArray} />
-              </AccordionContent>
-            </AccordionItem>
+            {AccordionItems}
           </Accordion>
         </CardContent>
       </Card>

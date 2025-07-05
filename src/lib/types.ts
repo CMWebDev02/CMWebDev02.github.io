@@ -7,6 +7,7 @@ export type PageLink = {
 
 export type Project = {
     projectTitle: string;
+    projectType: string;
     projectImage: string;
     imageDescription: string;
     projectDescription: string;
