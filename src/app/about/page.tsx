@@ -14,7 +14,7 @@ export default function AboutPage() {
   const MJCLink = "https://www.mjc.edu/";
   const BVTLink = "https://www.bayvalleytech.com/";
   return (
-    <Card className="w-full lg:w-11/12 xl:w-4/5 h-fit max-h-full">
+    <Card className="w-full lg:w-11/12 xl:w-4/5 h-fit">
       <CardHeader>
         <CardTitle className="text-xl md:text-3xl">About</CardTitle>
         <CardDescription className="text-md md:text-xl">
@@ -22,7 +22,7 @@ export default function AboutPage() {
           Developer.
         </CardDescription>
       </CardHeader>
-      <CardContent className="w-full h-full max-h-full overflow-scroll flex flex-col md:flex-row-reverse gap-5">
+      <CardContent className="w-full h-full flex flex-col md:flex-row-reverse gap-5">
         <Image
           src={"/assets/Personal Photo.jpg"}
           alt="Personal Photo"

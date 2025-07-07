@@ -11,17 +11,17 @@ export default function ContactPage() {
   return (
     <Card className="w-full lg:w-11/12 xl:w-4/5 h-fit max-h-full">
       <CardHeader>
-        <CardTitle>Contact</CardTitle>
+        <CardTitle className="text-xl md:text-3xl">Contact</CardTitle>
       </CardHeader>
-      <CardContent className="h-full max-h-full overflow-scroll">
-        <p>
+      <CardContent className="h-full">
+        <p className="w-full text-md md:text-lg">
           If you wish to get into contact with me, the best way would be to
           reach out to me via email or by reaching out to me on linkedIn. Feel
           free to contact me with any questions about my projects, about this
           website, or web development in general.
         </p>
       </CardContent>
-      <CardFooter className="flex flex-col items-start">
+      <CardFooter className="flex flex-col items-start text-md md:text-lg">
         <h2>My Contacts</h2>
         <ul>
           <li>
