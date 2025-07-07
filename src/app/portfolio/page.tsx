@@ -6,21 +6,21 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { projectsArray } from "@/lib/utils";
-import ProjectCarousel from "@/components/client/project-carousel";
-import ProjectList from "@/components/client/project-list";
+import ProjectDisplay from "@/containers/projects/project-display";
 
 export default function PortfolioPage() {
-  const AccordionItems = [ "React", "JavaScript", "HTML", "CMS"].map((type) => {
-    const filteredProjects = projectsArray.filter(project => project.projectType === type);
+  const AccordionItems = ["React", "JavaScript", "HTML", "CMS"].map((type) => {
+    const filteredProjects = projectsArray.filter(
+      (project) => project.projectType === type
+    );
     return (
       <AccordionItem value={type} key={type}>
-              <AccordionTrigger>{type}</AccordionTrigger>
-              <AccordionContent>
-                <ProjectCarousel projectsArray={filteredProjects} />
-                <ProjectList projectsArray={filteredProjects} />
-              </AccordionContent>
-            </AccordionItem>
-    )
+        <AccordionTrigger>{type}</AccordionTrigger>
+        <AccordionContent>
+          <ProjectDisplay projectsArray={filteredProjects} />
+        </AccordionContent>
+      </AccordionItem>
+    );
   });
 
   return (
