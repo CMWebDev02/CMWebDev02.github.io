@@ -27,7 +27,7 @@ export default function PortfolioPage() {
     <>
       <Card className="w-full lg:w-11/12 xl:w-4/5 h-full md:h-11/12 max-h-full">
         <CardHeader>
-          <CardTitle>Portfolio</CardTitle>
+          <CardTitle className="text-md md:text-3xl">Portfolio</CardTitle>
         </CardHeader>
         <CardContent className="h-full max-h-full overflow-scroll">
           <Accordion type="single" collapsible>

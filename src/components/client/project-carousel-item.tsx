@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "../ui/card";
 import Image from "next/image";
-import Link from "next/link";
 import ProjectLinks from "./project-links";
 
 interface ProjectCarouselItemProps {
