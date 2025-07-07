@@ -16,7 +16,7 @@ export default function PortfolioPage() {
     return (
       <AccordionItem value={type} key={type}>
         <AccordionTrigger>{type}</AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="w-full flex justify-center items-center">
           <ProjectDisplay projectsArray={filteredProjects} />
         </AccordionContent>
       </AccordionItem>
@@ -25,11 +25,11 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <Card className="w-full lg:w-11/12 xl:w-4/5 h-full md:h-11/12 max-h-full">
+      <Card className="w-full lg:w-11/12 xl:w-4/5 h-full md:h-11/12 max-h-full md:max-h-11/12 overflow-scroll">
         <CardHeader>
           <CardTitle className="text-md md:text-3xl">Portfolio</CardTitle>
         </CardHeader>
-        <CardContent className="h-full max-h-full overflow-scroll">
+        <CardContent className="h-full">
           <Accordion type="single" collapsible>
             {AccordionItems}
           </Accordion>
