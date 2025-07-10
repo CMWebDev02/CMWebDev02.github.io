@@ -45,8 +45,8 @@ export default function ProjectListItem({
         <Image
           src={projectImage}
           alt={imageDescription}
-          width={400}
-          height={400}
+          width={50}
+          height={50}
           className="
             aspect-auto
             object-contain

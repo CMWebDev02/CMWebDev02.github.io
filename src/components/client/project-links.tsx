@@ -16,7 +16,7 @@ export default function ProjectLinks({
   return (
     <div className="w-full h-full flex flex-col md:flex-row landscape:flex-row gap-2 justify-center items-center">
       {projectDemoLink !== null && (
-        <Link href={{ href: projectDemoLink }} className="h-full">
+        <Link href={projectDemoLink} className="h-full">
           <Button className="flex h-full gap-5">
             <span className="text-md">Demo</span>
             <FontAwesomeIcon
@@ -27,7 +27,7 @@ export default function ProjectLinks({
           </Button>
         </Link>
       )}
-      <Link href={{ href: projectGitHubLink }} className="h-full">
+      <Link href={projectGitHubLink} className="h-full">
         <Button className="flex h-full gap-5">
           <span className="text-md">Github</span>
           <FontAwesomeIcon

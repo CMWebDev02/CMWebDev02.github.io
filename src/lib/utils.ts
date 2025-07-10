@@ -53,10 +53,10 @@ export const projectsArray: Project[] = [
     projectImage: projectIcons.doffy_project_icon,
     imageDescription: "A light bulb containing the various continents of the world.",
     projectDescription:
-      "A NextJS web page that scraped all job postings from various sites like Zip Recruiter, Monster, Dice, and Indeed. In addition, the site also allowed users to store various job postings and their resumes to share with one another. For this project, in terms of the back end, I was responsible for constructing the WebScraping API and setting up the scraping for all the job site, along with initializing the database to store all the scraped jobs. For the front end, I was responsible for creating the saved-jobs page and the profiles page, along with constructing the resume uploading form.",
-    projectDemoLink: "https://monthly-template-generator.netlify.app/",
+      "A NextJS web page that scraped all job postings from various sites like Zip Recruiter, Monster, Dice, and Indeed. In addition, the site also allowed users to store various job postings and their resumes to share with one another. For this project, in terms of the back end, I was responsible for constructing the WebScraping API and setting up the scraping for all the job site, along with initializing the database to store all the scraped jobs. For the front end, I was responsible for creating the Saved Jobs and the Profile page, along with constructing the resume uploading form.",
+    projectDemoLink: "https://doffy-delta.vercel.app/",
     projectGitHubLink:
-      "https://github.com/CMBVT2023/monthly-template-generator",
+      "https://github.com/Bay-Valley-Tech-Code-Academy/doffy",
   },
   {
     projectTitle: "PDF Splitter",
