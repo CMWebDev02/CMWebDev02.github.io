@@ -10,6 +10,9 @@ import login_ui_icon from "../../public/assets/project-icons/login-ui-icon.svg";
 import email_interface_icon from "../../public/assets/project-icons/email-interface-icon.svg";
 import cookie_crumb_clicker_icon from "../../public/assets/project-icons/cookie-crumb-clicker-icon.svg";
 import pdf_splitter_icon from "../../public/assets/project-icons/pdf-splitter-icon.svg";
+import invoice_organizer_icon from "../../public/assets/project-icons/invoice-organizer.svg";
+import financial_tracker_icon from "../../public/assets/project-icons/financial-tracker-icon.svg";
+import doffy_project_icon from "../../public/assets/project-icons/doffy-project-icon.png";
 import type { Project } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
@@ -27,6 +30,9 @@ const projectIcons = {
   email_interface_icon,
   cookie_crumb_clicker_icon,
   pdf_splitter_icon,
+  invoice_organizer_icon,
+  financial_tracker_icon,
+  doffy_project_icon
 };
 
 export const projectsArray: Project[] = [
@@ -37,6 +43,17 @@ export const projectsArray: Project[] = [
     imageDescription: "A copy of a file being generated.",
     projectDescription:
       "Autofill the date onto a pdf file. The user can choose any date range, and include or exclude specific weekdays, to ease the process of creating monthly schedules or reports.",
+    projectDemoLink: "https://monthly-template-generator.netlify.app/",
+    projectGitHubLink:
+      "https://github.com/CMBVT2023/monthly-template-generator",
+  },
+  {
+    projectTitle: "Doffy Project",
+    projectType: "React",
+    projectImage: projectIcons.doffy_project_icon,
+    imageDescription: "A light bulb containing the various continents of the world.",
+    projectDescription:
+      "A NextJS web page that scraped all job postings from various sites like Zip Recruiter, Monster, Dice, and Indeed. In addition, the site also allowed users to store various job postings and their resumes to share with one another. For this project, in terms of the back end, I was responsible for constructing the WebScraping API and setting up the scraping for all the job site, along with initializing the database to store all the scraped jobs. For the front end, I was responsible for creating the saved-jobs page and the profiles page, along with constructing the resume uploading form.",
     projectDemoLink: "https://monthly-template-generator.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMBVT2023/monthly-template-generator",
@@ -60,6 +77,48 @@ export const projectsArray: Project[] = [
       "Search through a plethora of recipes and save them to a recipe book. The project also includes meal planning and generates the nutritional information for any saved recipe.",
     projectDemoLink: "https://recipe-book-and-meal-planner.netlify.app/",
     projectGitHubLink: "https://github.com/CMWebDev02/recipe-book-miranda",
+  },
+  {
+    projectTitle: "Invoice Organizer Font End",
+    projectType: "React",
+    projectImage: projectIcons.invoice_organizer_icon,
+    imageDescription: "A file icon.",
+    projectDescription:
+      "Receive PDF invoices and sort them into their appropriate directories, and allows the quick creation of directories while sorting through the files. The application also features a user system via a user login and user creator. This front end application is intended to be utilized with the invoice sorter back end api.",
+    projectDemoLink: null,
+    projectGitHubLink:
+      "https://github.com/CMWebDev02/invoice-organizer-miranda",
+  },
+  {
+    projectTitle: "Invoice Sorter Back End",
+    projectType: "Node JS",
+    projectImage: projectIcons.invoice_organizer_icon,
+    imageDescription: "A file icon.",
+    projectDescription:
+      "An API that access a file system to move files based on the actions received from the front end. The API creates various directories to store PDF invoices by the year they are generated and the name they are associated with.The API also stores and receives the user login and creation via a database. This back end application is intended to be utilized with the invoice organizer front end.",
+    projectDemoLink: null,
+    projectGitHubLink: "https://github.com/CMWebDev02/invoice-sorter-api",
+  },
+  {
+    projectTitle: "Financial Tracker Font End",
+    projectType: "React",
+    projectImage: projectIcons.financial_tracker_icon,
+    imageDescription: "A file with lines of text.",
+    projectDescription:
+      "Tracker all financial purchases or income for a person. The application features a user system so that multiple people can enter their finances and sync it across any device. This front end application is intended to be utilized with the Financial Tracker Back End api.",
+    projectDemoLink: null,
+    projectGitHubLink:
+      "https://github.com/CMWebDev02/financial-tracker-front-end",
+  },
+  {
+    projectTitle: "Financial Tracker Back End",
+    projectType: "Node JS",
+    projectImage: projectIcons.financial_tracker_icon,
+    imageDescription: "A file with lines of text.",
+    projectDescription:
+      "An API that accesses various databases to store user information and their associated financial information. The API is responsible for validating a user before sending back their financial information, and for filtering the information based on the request from the front end. This back end application is intended to be utilized with the Financial Tracker front end.",
+    projectDemoLink: null,
+    projectGitHubLink: "https://github.com/CMWebDev02/financial-tracker-api",
   },
   {
     projectTitle: "Chess Ai Project",
