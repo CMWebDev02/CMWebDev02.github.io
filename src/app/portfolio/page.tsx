@@ -9,7 +9,7 @@ import { projectsArray } from "@/lib/utils";
 import ProjectDisplay from "@/containers/projects/project-display";
 
 export default function PortfolioPage() {
-  const AccordionItems = ["React", "JavaScript", "HTML", "CMS"].map((type) => {
+  const AccordionItems = ["Electron", "React", "JavaScript", "HTML"].map((type) => {
     const filteredProjects = projectsArray.filter(
       (project) => project.projectType === type
     );
