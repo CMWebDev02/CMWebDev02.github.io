@@ -1,7 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import monthly_template_generator_icon from "../../public/assets/project-icons/monthly-template-generator-icon.svg";
-import recipe_book_icon from "../../public/assets/project-icons/recipe-book-icon.svg";
+import recipe_book_icon from "../../public/assets/project-icons/recipe-book-meal-planner-icon.svg";
 import chess_ai_icon from "../../public/assets/project-icons/chess-ai-icon.svg";
 import employee_business_card_icon from "../../public/assets/project-icons/employee-business-card-icon.svg";
 import rpg_adventure_game_icon from "../../public/assets/project-icons/rpg-adventure-game-icon.svg";
