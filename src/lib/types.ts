@@ -13,4 +13,5 @@ export type Project = {
     projectDescription: string;
     projectDemoLink: string | null;
     projectGitHubLink: string;
+    isExampleProject: boolean;
 }

@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "../../components/ui/card";
 import { Button } from "@/components/ui/button";
-import { projectsArray } from "@/lib/utils";
+import { examplesProjectArray } from "@/lib/utils";
 import Link from "next/link";
 import ProjectDisplay from "../projects/project-display";
 
@@ -19,7 +19,7 @@ export default function PortfolioContainer() {
         </CardTitle>
       </CardHeader>
       <CardContent className="h-10/12 w-full p-3 flex justify-center">
-        <ProjectDisplay projectsArray={projectsArray} />
+        <ProjectDisplay projectsArray={examplesProjectArray} />
       </CardContent>
       <CardFooter className="w-full h-1/12 flex justify-center">
         <Link href={"./portfolio"}>
