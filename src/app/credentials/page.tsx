@@ -5,6 +5,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import CredentialList from "@/components/client/credential-list";
+import { credentialsArray } from "@/lib/utils";
 
 export default function CredentialsPage() {
   const CredentialItems = [
@@ -15,11 +17,15 @@ export default function CredentialsPage() {
     "Adobe",
     "LearnKey",
   ].map((institute) => {
-    const filteredCredential = [];
+    const filteredCredentials = credentialsArray.filter(
+      (credential) => credential.credentialInstitute === institute
+    );
     return (
       <AccordionItem value={institute} key={institute}>
         <AccordionTrigger>{institute}</AccordionTrigger>
-        <AccordionContent className="w-full flex justify-center items-center"></AccordionContent>
+        <AccordionContent className="w-full flex justify-center items-center">
+          <CredentialList credentialsArray={filteredCredentials} />
+        </AccordionContent>
       </AccordionItem>
     );
   });
