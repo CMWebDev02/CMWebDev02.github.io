@@ -11,8 +11,9 @@ export default function CredentialsPage() {
     "Bay Valley Tech",
     "Modesto Junior College",
     "CompTIA",
-    "Test Out",
+    "TestOut",
     "Adobe",
+    "LearnKey",
   ].map((institute) => {
     const filteredCredential = [];
     return (
