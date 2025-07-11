@@ -32,7 +32,7 @@ const projectIcons = {
   pdf_splitter_icon,
   invoice_organizer_icon,
   financial_tracker_icon,
-  doffy_project_icon
+  doffy_project_icon,
 };
 
 export const projectsArray: Project[] = [
@@ -46,19 +46,19 @@ export const projectsArray: Project[] = [
     projectDemoLink: "https://monthly-template-generator.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMBVT2023/monthly-template-generator",
-      isExampleProject: true
+    isExampleProject: true,
   },
   {
     projectTitle: "Doffy Project",
     projectType: "React",
     projectImage: projectIcons.doffy_project_icon,
-    imageDescription: "A light bulb containing the various continents of the world.",
+    imageDescription:
+      "A light bulb containing the various continents of the world.",
     projectDescription:
       "A NextJS web page that scraped all job postings from various sites like Zip Recruiter, Monster, Dice, and Indeed. In addition, the site also allowed users to store various job postings and their resumes to share with one another. For this project, in terms of the back end, I was responsible for constructing the WebScraping API and setting up the scraping for all the job site, along with initializing the database to store all the scraped jobs. For the front end, I was responsible for creating the Saved Jobs and the Profile page, along with constructing the resume uploading form.",
     projectDemoLink: "https://doffy-delta.vercel.app/",
-    projectGitHubLink:
-      "https://github.com/Bay-Valley-Tech-Code-Academy/doffy",
-      isExampleProject: true
+    projectGitHubLink: "https://github.com/Bay-Valley-Tech-Code-Academy/doffy",
+    isExampleProject: true,
   },
   {
     projectTitle: "PDF Splitter",
@@ -69,7 +69,7 @@ export const projectsArray: Project[] = [
       "Convert any PDF document into separate files. The user can select any amount of pages from the original file split them into a new PDF file. The app features the ability to save the new PDF files in any location on the user's computer as well. This app is developed using electron and can be run on various operating system like Windows, MacOS, and various Linux distributions. ",
     projectDemoLink: null,
     projectGitHubLink: "https://github.com/CMWebDev02/pdf-splitter",
-    isExampleProject: true
+    isExampleProject: true,
   },
   {
     projectTitle: "Recipe Book and Meal Planner Project",
@@ -80,7 +80,7 @@ export const projectsArray: Project[] = [
       "Search through a plethora of recipes and save them to a recipe book. The project also includes meal planning and generates the nutritional information for any saved recipe.",
     projectDemoLink: "https://recipe-book-and-meal-planner.netlify.app/",
     projectGitHubLink: "https://github.com/CMWebDev02/recipe-book-miranda",
-    isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Invoice Organizer Font End",
@@ -92,7 +92,7 @@ export const projectsArray: Project[] = [
     projectDemoLink: null,
     projectGitHubLink:
       "https://github.com/CMWebDev02/invoice-organizer-miranda",
-      isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Invoice Sorter Back End",
@@ -103,7 +103,7 @@ export const projectsArray: Project[] = [
       "An API that access a file system to move files based on the actions received from the front end. The API creates various directories to store PDF invoices by the year they are generated and the name they are associated with.The API also stores and receives the user login and creation via a database. This back end application is intended to be utilized with the invoice organizer front end.",
     projectDemoLink: null,
     projectGitHubLink: "https://github.com/CMWebDev02/invoice-sorter-api",
-    isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Financial Tracker Font End",
@@ -115,7 +115,7 @@ export const projectsArray: Project[] = [
     projectDemoLink: null,
     projectGitHubLink:
       "https://github.com/CMWebDev02/financial-tracker-front-end",
-      isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Financial Tracker Back End",
@@ -126,7 +126,7 @@ export const projectsArray: Project[] = [
       "An API that accesses various databases to store user information and their associated financial information. The API is responsible for validating a user before sending back their financial information, and for filtering the information based on the request from the front end. This back end application is intended to be utilized with the Financial Tracker front end.",
     projectDemoLink: null,
     projectGitHubLink: "https://github.com/CMWebDev02/financial-tracker-api",
-    isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Chess Ai Project",
@@ -137,7 +137,7 @@ export const projectsArray: Project[] = [
       "Play against an ai opponent in a game of chess, and choose between different chess algorithms for the opponent to utilize. Alternatively, watch two ai opponents battle against each other using different chess algorithms.",
     projectDemoLink: "https://chess-ai-project-miranda.netlify.app/",
     projectGitHubLink: "https://github.com/CMWebDev02/chess-ai-project-miranda",
-    isExampleProject: true
+    isExampleProject: true,
   },
   {
     projectTitle: "Employee Business Card Generator",
@@ -150,7 +150,7 @@ export const projectsArray: Project[] = [
       "https://employee-business-cards-project-miran.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/employee-business-cards-project-miranda",
-      isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Cookie Crumb Clicker",
@@ -162,7 +162,7 @@ export const projectsArray: Project[] = [
     projectDemoLink: "https://cookie-crumb-clicker.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/module-2-js-final-project-cristiano-miranda/settings",
-      isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "RPG Adventure Game",
@@ -174,7 +174,7 @@ export const projectsArray: Project[] = [
     projectDemoLink: "https://rpg-miranda.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/role-playing-game-miranda",
-      isExampleProject: false
+    isExampleProject: false,
   },
   {
     projectTitle: "Todo Application",
@@ -185,7 +185,7 @@ export const projectsArray: Project[] = [
       "An application to store and keep track of your various tasks.",
     projectDemoLink: "https://todo-app-miranda.netlify.app/",
     projectGitHubLink: "https://github.com/CMWebDev02/todo-app-miranda",
-    isExampleProject: true
+    isExampleProject: true,
   },
   {
     projectTitle: "Email Interface",
@@ -196,7 +196,7 @@ export const projectsArray: Project[] = [
     projectDemoLink: "https://bootstrap-email-refresh.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/bootstrap-email-refresh-miranda",
-      isExampleProject: true
+    isExampleProject: true,
   },
   {
     projectTitle: "Login UI Application",
@@ -208,8 +208,10 @@ export const projectsArray: Project[] = [
     projectDemoLink: "https://login-ui-miranda.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/cristiano-miranda-login-ui-project",
-      isExampleProject: false
+    isExampleProject: false,
   },
 ];
 
-export const examplesProjectArray = projectsArray.filter((project) => project.isExampleProject);
+export const examplesProjectArray = projectsArray.filter(
+  (project) => project.isExampleProject
+);
