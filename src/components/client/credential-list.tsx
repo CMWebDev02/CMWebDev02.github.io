@@ -11,10 +11,12 @@ export default function CredentialList({
 }: CredentialListProps) {
   const CredentialItems = credentialsArray.map((credential) => {
     return (
-      <Card key={credential.credentialTitle}>
-        <CardHeader>{credential.credentialTitle}</CardHeader>
-        <CardContent>{credential.credentialDescription}</CardContent>
-      </Card>
+      <div key={credential.credentialTitle} className="p-1">
+        <Card className="bg-primary-background/70">
+          <CardHeader className="text-md md:text-xl">{credential.credentialTitle}</CardHeader>
+          <CardContent className="text-sm md:text-md text-card-text">{credential.credentialDescription}</CardContent>
+        </Card>
+      </div>
     );
   });
 
