@@ -9,7 +9,13 @@ import { projectsArray } from "@/lib/utils";
 import ProjectDisplay from "@/containers/projects/project-display";
 
 export default function PortfolioPage() {
-  const AccordionItems = ["Electron", "React", "Node JS", "JavaScript", "HTML"].map((type) => {
+  const ProjectItems = [
+    "Electron",
+    "React",
+    "Node JS",
+    "JavaScript",
+    "HTML",
+  ].map((type) => {
     const filteredProjects = projectsArray.filter(
       (project) => project.projectType === type
     );
@@ -31,7 +37,7 @@ export default function PortfolioPage() {
         </CardHeader>
         <CardContent className="h-full">
           <Accordion type="single" collapsible>
-            {AccordionItems}
+            {ProjectItems}
           </Accordion>
         </CardContent>
       </Card>
