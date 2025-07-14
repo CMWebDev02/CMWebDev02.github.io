@@ -3,7 +3,6 @@ import { CarouselItem } from "../ui/carousel";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
