@@ -30,23 +30,20 @@ export default function ProjectCarouselItem({
 }: ProjectCarouselItemProps) {
   return (
     <CarouselItem className="w-full h-full">
-      <Card className="w-full h-full flex flex-col gap-1 bg-primary-background/70">
-        <CardHeader className="w-full h-1/12">
+      <Card className="w-full h-full flex flex-col gap-0 p-1 bg-primary-background/70">
+        <CardHeader className="w-full h-1/5">
           <CardTitle className="text-md md:text-xl">{projectTitle}</CardTitle>
-        </CardHeader>
-        <CardContent className="w-full h-10/12 flex flex-col gap-2">
           <Image
             layout="auto"
             src={projectImage}
             alt={imageDescription}
             className="aspect-auto object-contain h-20"
           />
-          {/* Height is calculated based on 83.3333% of the parent container's height minus 80 pixels, the static height of the picture */}
-          <CardDescription className="h-[calc((10/12 * 100%) - 80)] max-h-[calc((10/12 * 100%) - 80)] overflow-y-auto">
-            {children}
-          </CardDescription>
+        </CardHeader>
+        <CardContent className="w-full h-3/5 max-h-3/5 overflow-y-auto">
+          {children}
         </CardContent>
-        <CardFooter className="w-full h-1/12">
+        <CardFooter className="w-full h-1/5">
           <ProjectLinks
             projectDemoLink={projectDemoLink}
             projectGitHubLink={projectGitHubLink}

@@ -14,7 +14,7 @@ export default function ProjectLinks({
   projectGitHubLink,
 }: ProjectLinksProps) {
   return (
-    <div className="w-full h-full flex flex-col md:flex-row landscape:flex-row gap-2 justify-center items-center">
+    <div className="w-full h-fit flex flex-row landscape:flex-row gap-2 justify-center items-center">
       {projectDemoLink !== null && (
         <Link href={projectDemoLink} className="h-full">
           <Button className="flex h-full gap-5">
