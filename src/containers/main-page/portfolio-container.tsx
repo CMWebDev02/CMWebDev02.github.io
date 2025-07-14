@@ -12,7 +12,7 @@ import ProjectDisplay from "../projects/project-display";
 
 export default function PortfolioContainer() {
   return (
-    <Card className="container w-full h-min md:h-full">
+    <Card className="container w-full h-full">
       <CardHeader className="h-1/12">
         <CardTitle className="text-md md:text-3xl">
           Portfolio Project Highlights

@@ -3,6 +3,7 @@ import { CarouselItem } from "../ui/carousel";
 import {
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -40,10 +41,16 @@ export default function ProjectCarouselItem({
             alt={imageDescription}
             className="aspect-auto object-contain h-20"
           />
-          {children}
+          {/* Height is calculated based on 83.3333% of the parent container's height minus 80 pixels, the static height of the picture */}
+          <CardDescription className="h-[calc((10/12 * 100%) - 80)] max-h-[calc((10/12 * 100%) - 80)] overflow-y-auto">
+            {children}
+          </CardDescription>
         </CardContent>
         <CardFooter className="w-full h-1/12">
-          <ProjectLinks projectDemoLink={projectDemoLink} projectGitHubLink={projectGitHubLink} />
+          <ProjectLinks
+            projectDemoLink={projectDemoLink}
+            projectGitHubLink={projectGitHubLink}
+          />
         </CardFooter>
       </Card>
     </CarouselItem>
