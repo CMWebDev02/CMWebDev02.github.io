@@ -13,8 +13,12 @@ export default function CredentialList({
     return (
       <div key={credential.credentialTitle} className="p-1">
         <Card className="bg-primary-background/70">
-          <CardHeader className="text-md md:text-xl">{credential.credentialTitle}</CardHeader>
-          <CardContent className="text-sm md:text-md text-card-text">{credential.credentialDescription}</CardContent>
+          <CardHeader className="text-xl md:text-2xl">
+            {credential.credentialTitle}
+          </CardHeader>
+          <CardContent className="text-sm md:text-lg text-card-text">
+            {credential.credentialDescription}
+          </CardContent>
         </Card>
       </div>
     );

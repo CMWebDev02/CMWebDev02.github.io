@@ -22,7 +22,7 @@ export default function CredentialsPage() {
     );
     return (
       <AccordionItem value={institute} key={institute}>
-        <AccordionTrigger>{institute}</AccordionTrigger>
+        <AccordionTrigger className="text-lg md:text-3xl">{institute}</AccordionTrigger>
         <AccordionContent className="w-full flex justify-center items-center">
           <CredentialList credentialsArray={filteredCredentials} />
         </AccordionContent>
