@@ -29,14 +29,14 @@ export default function ProjectCarouselItem({
 }: ProjectCarouselItemProps) {
   return (
     <CarouselItem className="w-full h-full">
-      <Card className="w-full h-full flex flex-col gap-0 p-1 bg-primary-background/70">
-        <CardHeader className="w-full h-1/5">
-          <CardTitle className="text-md md:text-xl">{projectTitle}</CardTitle>
+      <Card className="w-full h-full flex flex-col gap-1 p-1 bg-primary-background/70">
+        <CardHeader className="w-full h-1/5 flex flex-row">
+          <CardTitle className="text-base">{projectTitle}</CardTitle>
           <Image
             layout="auto"
             src={projectImage}
             alt={imageDescription}
-            className="aspect-auto object-contain h-20"
+            className="object-contain w-full h-full"
           />
         </CardHeader>
         <CardContent className="w-full h-3/5 max-h-3/5 overflow-y-auto">

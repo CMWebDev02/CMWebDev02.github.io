@@ -8,7 +8,11 @@ export default function PortfolioPage() {
 
   const ProjectTabTriggers = projectTypes.map((type) => {
     return (
-      <TabsTrigger value={type} key={`${type}-trigger`}>
+      <TabsTrigger
+        value={type}
+        key={`${type}-trigger`}
+        className="text-sm md:text-2xl w-1/5"
+      >
         {type}
       </TabsTrigger>
     );
@@ -19,23 +23,29 @@ export default function PortfolioPage() {
       (project) => project.projectType === type
     );
     return (
-      <TabsContent value={type} key={`${type}-content`} className="w-full">
+      <TabsContent
+        value={type}
+        key={`${type}-content`}
+        className="w-full h-full max-h-full overflow-y-auto flex justify-center"
+      >
         <ProjectDisplay projectsArray={filteredProjects} />
       </TabsContent>
     );
   });
 
   return (
-    <Card className="w-full lg:w-11/12 xl:w-4/5 h-full md:h-11/12 max-h-full md:max-h-11/12 overflow-scroll p-0">
-      <CardHeader className="h-1/12 p-1">
-        <CardTitle className="text-md md:text-3xl">Portfolio</CardTitle>
-      </CardHeader>
-      <CardContent className="h-11/12 max-h-11/12 overflow-y-auto w-full p-0">
-        <Tabs>
-          <TabsList>{ProjectTabTriggers}</TabsList>
+    <Card className="w-full lg:w-11/12 xl:w-4/5 h-full md:h-11/12 p-0">
+      <Tabs className="w-full h-full">
+        <CardHeader className="h-1/6 p-1 flex flex-col gap-1">
+          <CardTitle className="text-xl md:text-3xl">Portfolio</CardTitle>
+          <TabsList className="flex gap-2 w-full">
+            {ProjectTabTriggers}
+          </TabsList>
+        </CardHeader>
+        <CardContent className="w-full h-5/6 max-h-5/6 p-1">
           {ProjectTabContents}
-        </Tabs>
-      </CardContent>
+        </CardContent>
+      </Tabs>
     </Card>
   );
 }
