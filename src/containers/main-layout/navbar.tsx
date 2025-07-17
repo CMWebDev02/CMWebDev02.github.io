@@ -11,20 +11,22 @@ import { NavLink } from "@/components/client/nav-link";
 export function NavBar() {
   return (
     <header
-      className={`h-12 md:h-screen w-full md:w-12 group md:transition-[width] duration-400 ease-in-out md:hover:w-30 overflow-x-hidden bg-primary`}
+      className={`h-12 lg:h-16 w-full group duration-400 ease-in-out overflow-x-hidden bg-primary`}
     >
-      <nav className="flex md:flex-col items-center p-1 h-full w-full gap-2">
-        <Image
-          id="miniature-website-logo"
-          src="./assets/CMWebDev-Graphic.svg"
-          alt="CMWebDev Website Logo"
-          width={150}
-          height={150}
-          className="h-10 w-10 md:w-full md:h-auto"
-        />
+      <nav className="flex flex-row justify-between items-center p-1 h-full w-full gap-2">
+        <div className="h-10 lg:h-14 w-1/5 flex justify-start">
+          <Image
+            id="miniature-website-logo"
+            src="./assets/CMWebDev.svg"
+            alt="CMWebDev Website Logo"
+            width={150}
+            height={150}
+            className="h-full w-auto"
+          />
+        </div>
 
         <div
-          className={`h-full md:h-1/4 flex flex-row md:flex-col overflow-x-scroll md:overflow-x-hidden overflow-y-hidden gap-2 md:sticky md:top-40`}
+          className={`h-full w-4/5 md:w-3/4 lg:w-1/2 flex flex-row overflow-x-scroll overflow-y-hidden gap-2`}
         >
           <NavLink href="./" linkName="Home" icon={faHouse} />
           <NavLink href="./about" linkName="About" icon={faUser} />

@@ -12,20 +12,14 @@ export function NavLink({ href, linkName, icon }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className="w-full flex gap-1 md:gap-2 items-center select-none text-white"
+      className="w-full flex flex-row gap-1 md:gap-2 
+      transition-colors hover:text-secondary-background ease-in-out hover:drop-shadow-black hover:drop-shadow-md
+      justify-center items-center content-center select-none text-white rounded-xl p-2"
     >
-      {/* Desktop View Nav Icon and Text */}
-      <div className="hidden md:flex w-auto">
-        <FontAwesomeIcon icon={icon} className="w-auto" />
+      <div className="hidden md:flex items-center content-center">
+        <FontAwesomeIcon icon={icon} size={"2x"} />
       </div>
-      <div className="hidden md:flex w-0 transition-[width] duration-500 ease-initial group-hover:w-20">
-        <p className="opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-          {linkName}
-        </p>
-      </div>
-
-      {/* Mobile View Nav Text */}
-      <p className="flex md:hidden text-3xl sm:text-4xl select-none">{linkName}</p>
+      <p className="text-3xl sm:text-4xl select-none">{linkName}</p>
     </Link>
   );
 }
