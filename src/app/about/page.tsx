@@ -1,3 +1,4 @@
+import InTextLink from "@/components/client/in-text-link";
 import {
   Card,
   CardContent,
@@ -36,24 +37,28 @@ export default function AboutPage() {
         />
         <p className="w-full md:w-2/3">
           As of now, I am attending{" "}
-          <Link href={SNHULink}>Southern New Hampshire University</Link> in
-          pursuit of a Bachelor degree in Computer science. Previously, I have
-          completed two associate degrees at <Link href={MJCLink}>MJC</Link>,
-          one in Computer Electronics and one in Computer Science - Programming
-          and have attended a coding boot camp,{" "}
-          <Link href={BVTLink}>Bay Valley Tech</Link>, that helped me become
-          proficient in web development. I have almost four year of experience
-          in programming, and have learned various languages like Python, C++,
-          and Visual Basic, with my main focus currently being HTML and
-          JavaScript. I am coming up on almost two of experience in web
+          <InTextLink linkHREF={SNHULink}>
+            Southern New Hampshire University
+          </InTextLink>{" "}
+          in pursuit of a Bachelor degree in Computer science. Previously, I
+          have completed two associate degrees at{" "}
+          <InTextLink linkHREF={MJCLink}>MJC</InTextLink>, one in Computer
+          Electronics and one in Computer Science - Programming and have
+          attended a coding boot camp,{" "}
+          <InTextLink linkHREF={BVTLink}>Bay Valley Tech</InTextLink>, that
+          helped me become proficient in web development. I have almost four
+          year of experience in programming, and have learned various languages
+          like Python, C++, and Visual Basic, with my main focus currently being
+          HTML and JavaScript. I am coming up on almost two of experience in web
           development and plan to continue pursuing for a career as my ultimate
           goal is to eventually work my way up to becoming a fullstack engineer.
           Feel free to browse this site to see my{" "}
-          <Link href={"/portfolio"}>portfolio</Link> and the
-          <Link href={"/credentials"}>certifications</Link> I have acquired.
-          Thank you for visiting my site and if wish to contact me, visit my
-          <Link href={"/contact"}>contact</Link> page to find the best way to
-          reach me.
+          <InTextLink linkHREF={"/portfolio"}>portfolio</InTextLink> and the{" "}
+          <InTextLink linkHREF={"/credentials"}>certifications</InTextLink> I
+          have acquired. Thank you for visiting my site and if wish to contact
+          me, visit my{" "}
+          <InTextLink linkHREF={"/contact"}>contact</InTextLink> page to find
+          the best way to reach me.
         </p>
       </CardContent>
     </Card>
