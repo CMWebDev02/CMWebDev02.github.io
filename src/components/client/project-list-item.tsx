@@ -33,7 +33,7 @@ export default function ProjectListItem({
   return (
     <Card className="h-1/4 w-full bg-primary-background/70">
       <CardHeader className="h-1/12 w-full">
-        <CardTitle className="text-md md:text-xl">{projectTitle}</CardTitle>
+        <CardTitle className="text-base md:text-xl">{projectTitle}</CardTitle>
       </CardHeader>
       <CardContent
         className={cn(

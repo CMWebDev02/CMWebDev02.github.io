@@ -22,7 +22,7 @@ export default function HeroContainer() {
   return (
     <Card className="container w-full p-1">
       <CardHeader className="w-full h-auto flex flex-col col-span-1">
-        <CardTitle className="text-md md:text-3xl">
+        <CardTitle className="text-base md:text-3xl">
           <span className="text-2xl md:text-5xl">Hello</span>, I am Cristiano
           Miranda and I am a Junior Web Developer.
         </CardTitle>
@@ -57,7 +57,7 @@ export default function HeroContainer() {
             <h2 className="text-lg md:text-2xl font-medium md:font-bold">
               Allow me to introduce myself...
             </h2>
-            <p className="text-md md:text-lg">
+            <p className="text-base md:text-lg">
               I currently pursuing a Bachelor Degree in Computer Science and in
               my free time I work on personal and volunteer projects. I have
               well over 2 years of experience with HTML, CSS, and JavaScript.

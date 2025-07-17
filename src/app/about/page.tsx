@@ -17,7 +17,7 @@ export default function AboutPage() {
     <Card className="w-full lg:w-11/12 xl:w-4/5 h-fit">
       <CardHeader>
         <CardTitle className="text-xl md:text-3xl">About</CardTitle>
-        <CardDescription className="text-md md:text-xl">
+        <CardDescription className="text-base md:text-xl">
           Hello, my name is Cristiano Miranda and I am currently a Junior Web
           Developer.
         </CardDescription>

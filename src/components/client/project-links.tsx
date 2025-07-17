@@ -18,7 +18,7 @@ export default function ProjectLinks({
       {projectDemoLink !== null && (
         <Link href={projectDemoLink} className="h-full">
           <Button className="flex h-full gap-5">
-            <span className="text-md">Demo</span>
+            <span className="text-base">Demo</span>
             <FontAwesomeIcon
               size="2xl"
               transform={"grow-20"}
@@ -29,7 +29,7 @@ export default function ProjectLinks({
       )}
       <Link href={projectGitHubLink} className="h-full">
         <Button className="flex h-full gap-5">
-          <span className="text-md">Github</span>
+          <span className="text-base">Github</span>
           <FontAwesomeIcon
             size="2xl"
             transform={"grow-20"}
