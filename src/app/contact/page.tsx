@@ -1,3 +1,4 @@
+import InTextLink from "@/components/client/in-text-link";
 import {
   Card,
   CardContent,
@@ -5,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -29,11 +29,11 @@ export default function ContactPage() {
           </li>
           <li>
             LinkedIn:{" "}
-            <Link
-              href={"https://www.linkedin.com/in/cristiano-miranda-8b30b829a/"}
+            <InTextLink
+              linkHREF={"https://www.linkedin.com/in/cristiano-miranda-8b30b829a/"}
             >
               Cristiano Miranda
-            </Link>
+            </InTextLink>
           </li>
         </ul>
       </CardFooter>
