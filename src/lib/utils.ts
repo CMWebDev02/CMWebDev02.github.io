@@ -193,7 +193,7 @@ export const projectsArray: Project[] = [
     projectType: "HTML",
     projectImage: projectIcons.email_interface_icon,
     imageDescription: "An envelope.",
-    projectDescription: "A response email interface with interactive features.",
+    projectDescription: "A responsive email interface with interactive features.",
     projectDemoLink: "https://bootstrap-email-refresh.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/bootstrap-email-refresh-miranda",
@@ -205,7 +205,7 @@ export const projectsArray: Project[] = [
     projectImage: projectIcons.todo_application_icon,
     imageDescription:
       "A list of todo items with some checked off as completed.",
-    projectDescription: "A response login interface with interactive features.",
+    projectDescription: "A responsive login interface with interactive features.",
     projectDemoLink: "https://login-ui-miranda.netlify.app/",
     projectGitHubLink:
       "https://github.com/CMWebDev02/cristiano-miranda-login-ui-project",
